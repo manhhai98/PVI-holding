@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>PVI</title>
+
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/aos-master/dist/aos.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+	<link rel="stylesheet" href="assets/css/pubweb.css">
+</head>
+<style>
+	.detail-content .item{
+		overflow: hidden;
+	}
+	.detail-content .item .text-area::before{
+		content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
+	    z-index: -1;
+	    width: 0;
+	    transition: all.3s ease-in-out;
+	}
+
+	.detail-content .item .text-area::after{
+		content: none;
+	}
+
+	.detail-content .item .text-area.bg-color1::before{
+		background: #0038A4;
+	}
+
+	.detail-content .item .text-area.bg-color2::before{
+		background: #0372FF;
+	}
+
+	.detail-content .item .text-area.bg-color3::before{
+		background: #A3A9F5;
+	}
+
+	.detail-content .item .text-area.bg-color4::before{
+		background: #183665;
+	}
+
+	.detail-content .item .text-area.bg-color5::before{
+		background: #7AB8FC;
+	}
+
+	.detail-content .item:hover .text-area::before{
+		width: 100%;
+	}
+
+	.detail-content .item .thumb img{
+		transition: all .3s ease-in-out;
+	}
+
+	.detail-content .item:hover img{
+		transform: scale(1.1);
+	}
+</style>	
+<body>
+	<!-- Header section start -->
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="wrapper">
+					<div class="search">
+						<button type="button" class="btn">
+							<i class="fas fa-search"></i>
+						</button>
+						<div class="search-input">
+							<input type="text" class="form-control" placeholder="Tìm kiếm...">
+						</div>
+					</div> 
+					<ul class="lang">
+						<li><a href="#">VI</a></li>
+						<li><a href="#">EN</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="wrapper">
+					<a href="index.html" class="logo">
+						<img src="assets/images/logo.png" alt="">
+					</a>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="about-us.html" class="nav-link">Về chúng tôi</a>
+							<ul class="dropdown">
+								<li>
+									<a href="PVI-present.html">PVI Ngày Nay</a>
+								</li>
+								<li>
+									<a href="PVI-history.html">Lịch Sử Hình Thành</a>
+								</li>
+								<li>
+									<a href="PVI-vision-mission.html">Tầm Nhìn - Sứ Mệnh - Giá Trị Cốt Lõi</a>
+								</li>
+								<li>
+									<a href="#">Ban Lãnh Đạo</a>
+									<ul class="sub-dropdown">
+										<li>
+											<a href="PVI-council.html">Hội Đồng Quản Trị</a>
+										</li>
+										<li>
+											<a href="PVI-council2.html">Ban Kiểm Soát</a>
+										</li>
+										<li>
+											<a href="PVI-council3.html">Ban Tổng Gián Đốc</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Tin Hoạt Động</a>
+									<ul class="sub-dropdown">
+										<li>
+											<a href="news.html">Tin PVI</a>
+										</li>
+										<li>
+											<a href="news.html">Báo Chí Viết Về Chúng Tôi</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="album-category.html">Thư Viện</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Lĩnh vực kinh doanh</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Bảo Hiểm</a>
+								</li>
+								<li>
+									<a href="#">Tái Bảo Hiểm</a>
+								</li>
+								<li>
+									<a href="#">Quản Lý Tài Sản</a>
+								</li>
+								<li>
+									<a href="renting-office.html">Văn Phòng Cho Thuê</a>
+								</li>
+								<li>
+									<a href="IT-center.html">Công Nghệ Thông Tin</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Quan hệ cổ đông</a>
+							<ul class="dropdown">
+								<li>
+									<a href="shareholder.html">Thông Điệp Từ Chủ Tịch</a>
+								</li>
+								<li>
+									<a href="announcement.html">Công Bố Thông Tin</a>
+								</li>
+								<li>
+									<a href="meeting.html">Đại Hội Đồng Cổ Đông</a>
+								</li>
+								<li>
+									<a href="report.html">Báo Cáo Thường Niên</a>
+								</li>
+								<li>
+									<a href="corporate-governance.html">Quản Trị Doanh Nghiệp</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Phát triển bền vững</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">Tôn Chỉ Phát Triển Bền Vững</a>
+								</li>
+								<li>
+									<a href="report.html">Báo Cáo Phát Triển Bền Vững</a>
+								</li>
+								<li>
+									<a href="#">Hoạt Động và Cộng Đồng</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Liên hệ</a>
+						</li>
+					</ul>
+					<a href="javascript:void(0)" class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Mobile menu start -->
+	<div class="mb-menu">
+		<div class="top">
+			<a href="index.html" class="logo">
+				<img src="assets/images/logo.png" alt="">
+			</a>
+
+			<a href="javascript:void(0)" class="close"><i class="fas fa-times"></i></a>
+		</div>
+		<div class="container">
+			<div class="wrapper">
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="about-us.html" class="nav-link">Về chúng tôi</a>
+						<ul class="dropdown">
+							<li>
+								<a href="PVI-present.html">PVI Ngày Nay</a>
+							</li>
+							<li>
+								<a href="PVI-history.html">Lịch Sử Hình Thành</a>
+							</li>
+							<li>
+								<a href="PVI-vision-mission.html">Tầm Nhìn - Sứ Mệnh - Giá Trị Cốt Lõi</a>
+							</li>
+							<li>
+								<a href="#">Ban Lãnh Đạo</a>
+								<ul class="sub-dropdown">
+									<li>
+										<a href="PVI-council.html">Hội Đồng Quản Trị</a>
+										</li>
+									<li>
+										<a href="PVI-council2.html">Ban Kiểm Soát</a>
+									</li>
+									<li>
+										<a href="PVI-council3.html">Ban Tổng Gián Đốc</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Tin Hoạt Động</a>
+								<ul class="sub-dropdown">
+									<li>
+										<a href="news.html">Tin PVI</a>
+									</li>
+									<li>
+										<a href="news.html">Báo Chí Viết Về Chúng Tôi</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="album-category.html">Thư Viện</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Lĩnh vực kinh doanh</a>
+						<ul class="dropdown">
+							<li>
+								<a href="#">Bảo Hiểm</a>
+							</li>
+							<li>
+								<a href="#">Tái Bảo Hiểm</a>
+							</li>
+							<li>
+								<a href="#">Quản Lý Tài Sản</a>
+							</li>
+							<li>
+								<a href="renting-office.html">Văn Phòng Cho Thuê</a>
+							</li>
+							<li>
+								<a href="IT-center.html">Công Nghệ Thông Tin</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Quan hệ cổ đông</a>
+						<ul class="dropdown">
+							<li>
+								<a href="shareholder.html">Thông Điệp Từ Chủ Tịch</a>
+							</li>
+							<li>
+								<a href="announcement.html">Công Bố Thông Tin</a>
+							</li>
+							<li>
+								<a href="meeting.html">Đại Hội Đồng Cổ Đông</a>
+							</li>
+							<li>
+								<a href="report.html">Báo Cáo Thường Niên</a>
+							</li>
+							<li>
+								<a href="corporate-governance.html">Quản Trị Doanh Nghiệp</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Phát triển bền vững</a>
+						<ul class="dropdown">
+							<li>
+								<a href="#">Tôn Chỉ Phát Triển Bền Vững</a>
+							</li>
+							<li>
+								<a href="report.html">Báo Cáo Phát Triển Bền Vững</a>
+							</li>
+							<li>
+								<a href="#">Hoạt Động và Cộng Đồng</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Liên hệ</a>
+					</li>
+				</ul>
+				<div class="bottom">
+					<div class="social">
+						<ul>
+							<li>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</li>
+						</ul>
+					</div>
+					<p>@2022 Bản quyền thuộc Công ty cổ phần PVI</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Mobile menu end -->
+
+	<section class="detail">
+		<!-- Banner section start -->
+		<section class="banner">
+			<div class="side-menu animate__animated animate__fadeInLeft animate__delay-1s">
+				<div class="social">
+					<ul>
+						<li>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="text">
+					<span>PVI Holding</span>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="container">
+					<div class="wrapper">
+						<div class="breadcrumb-area animate__animated animate__fadeInUp animate__delay-1s">
+		                    <nav aria-label="breadcrumb">
+		                       <ol class="breadcrumb d-flex align-items-center">
+		                            <li class="breadcrumb-item" ><a href="index.html"><i class="fas fa-home"></i></a></li>
+		                            <li class="breadcrumb-item"><a href="#">Về chúng tôi</a></li>
+		                            <li class="breadcrumb-item"><a href="#" class="active">pVI ngày nay</a></li>
+		                            <li class="breadcrumb-item"><a href="#">Lịch sử hình thành</a></li>
+		                            <li class="breadcrumb-item"><a href="#">tầm nhìn - sứ mệnh - giá trị cốt lõi</a></li>
+		                            <li class="breadcrumb-item"><a href="#">tin hoạt động</a></li>
+		                            <li class="breadcrumb-item"><a href="#">ban lãnh đạo</a></li>
+		                            <li class="breadcrumb-item"><a href="#">Thư viện</a></li>
+		                        </ol>
+		                    </nav>
+		                </div>
+		                <h4 class="title white-text animate__animated animate__fadeInUp animate__delay-2s">Pvi ngày nay</h4>
+					</div>
+				</div>	
+            </div>	
+		</section>
+		<!-- Banner section end -->
+
+		<!-- Detail content section start -->
+		<section class="section detail-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+			<div class="container">
+				<div class="wrapper">
+					<h4 class="title">Pvi Ngày nay</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<p>PVI là công ty đầu tư hàng đầu tại Việt Nam cung cấp các giải pháp quản lý tài sản thay thế cũng như thị trường vốn và bảo hiểm.</p>
+							<p>
+								Là nhà đầu tư có tầm nhìn công nghiệp, chúng tôi mong muốn tạo ra lợi nhuận đầu tư hấp dẫn bằng cách tuân theo phương pháp tiếp cận kiên nhẫn và kỷ luật, sử dụng những người chất lượng cao, theo đuổi các tiêu chuẩn xuất sắc cao nhất và gắn lợi ích của chúng tôi với lợi ích của các đối tác đầu tư của chúng tôi.
+							</p>
+							<p>Chúng tôi thường nói về những lợi ích của cấu trúc và mô hình kinh doanh của chúng tôi - kết hợp vốn của bên thứ ba với hoạt động kinh doanh thị trường vốn và bảng cân đối kế toán của chúng tôi - bởi vì chúng tôi tin rằng chúng tôi đã xây dựng một cái gì đó khác biệt. Chúng tôi có một doanh nghiệp thị trường vốn cung cấp đầy đủ các dịch vụ, từ việc đưa các công ty ra đại chúng đến bảo lãnh các giao dịch mới (cho cả PVI và các công ty bên thứ ba) và cung cấp nợ và vốn chủ sở hữu. Và chúng tôi có nguồn vốn lâu đời trong quỹ của mình, sẵn sàng triển khai trên nhiều loại tài sản khác nhau. </p>
+							<p>
+								Về mặt cá nhân, các quỹ và doanh nghiệp này đang tạo ra lợi nhuận cho các nhà đầu tư quỹ và cổ đông của chúng tôi, nhưng khi chúng được kết hợp với nhau, chúng sẽ tạo ra một lợi thế cạnh tranh mạnh mẽ. Chúng tôi coi bảng cân đối kế toán của mình là một yếu tố khác biệt chính, cho chúng tôi khả năng điều chỉnh mối quan tâm của chúng tôi với các nhà đầu tư quỹ, phát triển các chiến lược đầu tư mới và hỗ trợ các chiến lược hiện có cũng như thực hiện các giao dịch chiến lược thay mặt chúng tôi.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img src="assets/images/Rectangle 160.png" alt="">
+						</div>
+					</div>
+					<p>
+						Khi bạn hợp tác với PVI, bạn được hưởng lợi từ bề rộng và chuyên môn của toàn bộ công ty. Khi thích hợp, tất cả các doanh nghiệp của PVI sẽ làm việc cùng nhau thay mặt cho tất cả các nhà đầu tư trong quỹ của chúng tôi. Các đối tác đầu tư của PVI có khả năng tiếp cận với nhiều thập kỷ kinh nghiệm tài chính và hoạt động, kiến thức chuyên môn sâu rộng về khu vực và ngành, hiểu biết sâu sắc về các xu hướng địa chính trị và vĩ mô toàn cầu cũng như mạng lưới quan hệ toàn cầu mạnh mẽ - cả bên trong và bên ngoài công ty.
+					</p>
+					<p>Thông qua phương pháp tiếp cận tích hợp trong toàn công ty, chúng tôi cố gắng cung cấp các giải pháp tài chính và phương tiện đầu tư sáng tạo để giúp các nhà đầu tư quỹ đạt được mục tiêu đầu tư của họ. Với các văn phòng trên khắp thế giới, chúng tôi hoàn thành sứ mệnh của mình với từng nhà đầu tư, từng công ty tại một thời điểm — và chúng tôi thực hiện điều này với tư cách là một công ty toàn cầu.</p>	
+
+					<section class="section">
+						<h4 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Những con số</h4>
+						<div class="row">
+							<div class="col-lg-6 large-item">
+								<div class="item mb-30" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+									<div class="thumb">
+										<img src="assets/images/Rectangle 161.png" alt="">
+									</div>
+									<div class="text-area bg-color1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+										24k tỷ VNĐ 
+									</div>
+								</div>
+								<div class="item mb-30" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+									<div class="thumb">
+										<img src="assets/images/Rectangle 164.png" alt="">
+									</div>
+									<div class="text-area bg-color2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+										456.xxx
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 small-item">
+								<div class="item mb-30" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+									<div class="thumb">
+										<img src="assets/images/Rectangle 163.png" alt="">
+									</div>
+									<div class="text-area bg-color3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+										456.xxx
+									</div>
+								</div>
+								<div class="item mb-30" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+									<div class="thumb">
+										<img src="assets/images/Rectangle 165.png" alt="">
+									</div>
+									<div class="text-area bg-color4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+										456.xxx
+									</div>
+								</div>
+								<div class="item mb-30" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+									<div class="thumb">
+										<img src="assets/images/Rectangle 166.png" alt="">
+									</div>
+									<div class="text-area bg-color5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+										456.xxx
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>	
+		<!-- Detail content section end -->
+	</section>
+	
+	<!-- Footer section start -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="row">
+				<div class="col-5" style="padding:0">
+					<div class="item bg-color1"></div>
+				</div>
+				<div class="col-4" style="padding:0">
+					<div class="item bg-color2"></div>
+				</div>
+				<div class="col-3" style="padding:0">
+					<div class="item bg-color3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="wrapper">
+				
+				<div class="row">
+					<div class="col-12">
+						<a href="index.html" class="logo">
+							<img src="assets/images/white-logo.png" alt="">
+						</a>
+					</div>
+					<div class="col-sm-6">
+						<div class="footer-widget mb-30">
+							<h5>Công ty cổ phần pvi</h5>
+							<ul>
+								<li>
+									Địa chỉ: Số 1 Phạm Văn Bạch - Cầu Giấy - Hà Nội
+								</li>
+								<li>
+									<span>Điện thoại: 024 37342299</span>
+									<span>Fax: 024 37342929</span>
+								</li>
+							</ul>
+
+							<ul class="social">
+								<li>
+									<a href="#"><i class="fab fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-widget mb-30">
+							<ul class="quick-links">
+								<li><a href="#">Về chúng tôi</a></li>
+								<li><a href="#">Lĩnh vực kinh doanh</a></li>
+								<li><a href="#">Quan hệ cổ đông</a></li>
+								<li><a href="#">Phát triển bền vững</a></li>
+								<li><a href="#">Tuyển dụng</a></li>
+								<li><a href="#">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="footer-widget image mb-30">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="assets/images/footer-img1.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="assets/images/footer-img2.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="col-md-4">
+							<span>@2022 Bản quyền thuộc Công ty cổ phần PVI</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<ul>
+								<li><a href="#">Thông tin</a></li>
+								<li><a href="#">Miễn trừ trách nhiệm</a></li>
+								<li><a href="#">Điều khoản bảo mật</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 text-right">
+							<ul>
+								<li><a href="#">Đăng ký</a></li>
+								<li><a href="#">Ngừng đăng ký</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+	<!-- Scroll top -->
+	<a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
