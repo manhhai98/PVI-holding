@@ -76,12 +76,26 @@
 		transition-delay: 2.1s;
 	}
 
-	@media only screen and (min-width: 1640px){
+	@media only screen and (min-width: 1560px){
 		.split div{
-			width: 160px;
-		    height: 240px;
+			width: 154px;
+    		height: 230px;
 		}
 	}
+
+	@media only screen and (min-width: 2100px){
+		.split div:nth-child(4), .split div:nth-child(5), .split div:nth-child(22),
+		.split div:nth-child(23) {
+		    background-position: -1088.667px 0 !important;
+		}
+
+		.split div {
+		    width: 210px;
+		    height: 310px;
+		}
+	}
+
+
 
 	@media only screen and (max-width: 1440px){
 		.split div {
@@ -591,6 +605,7 @@
 	<section class="section about-section contact-info">
 		<div class="container">
 			<div class="wrapper">
+				<img src="assets/images/Frame.png" alt="" class="bg-img">
 				<div class="row mr-0 ml-0">
 					<div class="col-md-5">
 						<h4 class="title white-text text-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">PVI Holdings</h4>
