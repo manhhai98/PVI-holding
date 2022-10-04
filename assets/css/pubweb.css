@@ -13,6 +13,7 @@ body{
 	color: #000;
 	font-size: 16px;
 	font-family: 'Roboto';
+	overflow-x: hidden;
 }
 
 body.hidden-overflow{
@@ -47,6 +48,10 @@ th{
 button{
 	border: none;
 	cursor: pointer;
+}
+
+.h-100{
+	height: 100%;
 }
 
 /*.row{
@@ -634,13 +639,17 @@ header .header-bottom .nav .nav-item:hover .dropdown{
     left: 35px;
 }
 
-#banner-slide,.banner-slide{
+/*#banner-slide,.banner-slide{
 	height: 100vh;
-}
+}*/
 
 #banner-slide img{
 	width: 100%;
 	height: 100%;
+}
+
+#banner-slide video{
+	object-fit: fill;
 }
 
 .owl-carousel .owl-stage-outer, .owl-carousel .owl-stage,
@@ -726,7 +735,7 @@ header .header-bottom .nav .nav-item:hover .dropdown{
 .banner .main{
 	position: absolute;
 	top: 0;
-	left: 7%;
+	left: 6%;
 	z-index: 2;
 	padding-top: 300px;
 	width: 50%;
@@ -749,6 +758,16 @@ header .header-bottom .nav .nav-item:hover .dropdown{
 	font-size: 18px;
 	color: #808080;
 	width: 65%;
+}
+
+
+.banner .right-img{
+	height: 100%;
+}
+
+.banner .right-img img{
+	height: 100%;
+	width: 100%;
 }
 
 /*Business*/
@@ -1125,7 +1144,9 @@ header .header-bottom .nav .nav-item:hover .dropdown{
 	color: #fff;
 	background: #0038A4;
 	padding: 50px 0;
+	position: relative;
 }
+
 
 .contact-info p{
 	margin-bottom: 10px;
@@ -1199,11 +1220,11 @@ figcaption{
 
 .detail .banner .main-content{
 	background: #0372FF;
-	padding: 70px 0;
+	padding: 70px 0 1px;
 }
 
 .detail .banner .main-content .breadcrumb-area{
-	margin-bottom: 80px;
+	margin-bottom: 160px;
 }
 
 .breadcrumb li {
@@ -1684,7 +1705,7 @@ a.file,a.file:hover{
 .bottom-content .item{
 	background: #77B6F3;
 	color: #fff;
-	padding: 50px;
+	padding: 50px 60px;
 }
 
 .bottom-content .item .title{
@@ -1790,6 +1811,10 @@ a.file,a.file:hover{
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: 700;
+}
+
+.commit .left-content{
+	padding-right: 70px;
 }
 
 .recruit .heading p{
@@ -1915,6 +1940,18 @@ a.file,a.file:hover{
 	transform: rotateY(0);
 }
 
+#banner-slide.owl-carousel.owl-loaded{
+	height: 100%;
+}
+
+.contact-info p{
+	font-size: 19px;
+}
+
+.contact-info p span{
+	margin-right: 5px;
+}
+
 @media only screen and (min-width: 992px){
 	.mt-lg-60{
 		margin-top: 60px;
@@ -1947,11 +1984,11 @@ a.file,a.file:hover{
 	}
 
 	#banner-slide,.banner-slide{
-		height: 73vh;
+		height: 58vh;
 	}
 
 	.detail .side-menu{
-		height: 73vh;
+		height: 58vh;
 	}
 
 	.side-menu .social a{
@@ -1988,12 +2025,12 @@ a.file,a.file:hover{
 		font-size: 24px;
 	}
 
-	/*.banner .main{
-		padding-top: 400px;
-	}*/
+	.banner .main{
+		padding-top: 375px;
+	}
 
 	.side-menu .social li{
-		padding: 20px 0;
+		padding: 13px 0;
 	}
 
 	.container{
@@ -2121,6 +2158,175 @@ a.file,a.file:hover{
 	.contact .map{
 		height: 470px;
 	}
+
+	.contact-info p{
+		font-size: 24px;
+	}
+
+	.banner .main{
+		left: 11%;
+	}
+
+	.detail .banner .main-content .breadcrumb-area{
+		margin-bottom: 190px;
+	}
+
+	.detail .banner .main-content{
+		padding: 85px 0 1px;
+	}
+}
+
+@media only screen and (min-width: 2100px){
+	.container{
+		max-width: 1920px;
+	}
+
+	.banner .logo{
+		width: 200px;
+		height: 196px;
+	}
+
+	.banner .main{
+		padding-top: 500px;
+	}
+
+	.banner .main .title{
+		font-size: 96px;
+	}
+
+	.banner .main .sub-title{
+		font-size: 40px;
+	}
+
+	.banner-slide{
+		height: 77.4vh;
+	}
+
+	.members .item img{
+		width: 350px;
+	}
+
+	.partners .item img{
+		width: 220px;
+	}
+
+
+
+	.about-section.members .item{
+		padding: 150px;
+	}
+
+	.about-section.members .item h5{
+		font-size: 29px;
+	}
+
+	.footer .footer-bottom ul li:not(:last-child)::after{
+		padding: 0 12px;
+	}
+
+	.contact-info p{
+		font-size: 29px;
+	}
+
+	.shareholder .card{
+		padding: 96px;
+		padding-bottom: 0;
+		padding-right: 120px;
+	}
+
+	.bg-img{
+		width: 320px;
+	}
+
+	.contact-info .bg-img{
+		width: 230px;
+	}
+
+	.shareholder .card .detail-btn{
+		margin-top: 150px;
+	}
+
+	.shareholder .card p{
+		font-size: 20px;
+	}
+
+	.bottom-content .item .title{
+		font-size: 30px;
+	}
+
+	.bottom-content .item p{
+		font-size: 20px;
+	}
+
+	body{
+		font-size: 20px;
+	}
+
+	h4.title{
+		padding-bottom: 45px;
+		margin-bottom: 45px;
+	}
+
+	section.section{
+		padding-top: 150px;
+	}
+
+	.mb-lg-70{
+		margin-bottom: 70px;
+	}
+
+	.side-menu .text{
+		flex-basis: 35%;
+	}
+
+	.side-menu .social{
+		flex-basis: 65%;
+	}
+
+	.recruit .card{
+		padding: 69px 69px 310px 50px;
+	}
+
+	.banner .main{
+		left: 12%;
+	}
+
+	header .header-bottom.fixed .logo img{
+		width: 150px;
+	}
+
+	.commit .card{
+		padding: 75px 150px 170px 150px;
+	}
+
+	.commit .left-content{
+		padding-right: 144px;
+	}
+
+	.detail .banner .main-content{
+		padding: 90px 0 1px;
+	}
+
+	.detail .banner .main-content .breadcrumb-area{
+		margin-bottom: 160px;
+	}
+
+	.banner .main p{
+		width: 51%;
+	}
+
+	.detail-content .small-box .icon-box .icon svg{
+		width: 300px;
+    	height: 180px;
+	}
+
+	.detail-content .icon-box h5{
+		font-size: 30px;
+	}
+
+	.item .text-area h3{
+		font-size: 30px;
+	}
 }
 
 @media only screen and (max-width: 1441px){
@@ -2128,13 +2334,13 @@ a.file,a.file:hover{
 		font-size: 14px;
 	}
 
-	#banner-slide,.banner-slide{
+	/*#banner-slide,.banner-slide{
 		height: 63vh;
-	}
+	}*/
 
-	.detail .side-menu{
+	/*.detail .side-menu{
 		height: 63vh;
-	}
+	}*/
 
 	.banner .main{
 		padding-top: 220px;
@@ -2339,13 +2545,13 @@ a.file,a.file:hover{
 		font-size: 14px;
 	}
 
-	#banner-slide,.banner-slide{
+	/*#banner-slide,.banner-slide{
 		height: 75vh;
 	}
 
 	.detail .side-menu{
 		height: 75vh;
-	}
+	}*/
 
 	.banner .main .title{
 		font-size: 34px;
@@ -2546,13 +2752,13 @@ a.file,a.file:hover{
 		font-size: 14px;
 	}
 
-	#banner-slide,.banner-slide{
+	/*#banner-slide,.banner-slide{
 		height: 40vh;
 	}
 
 	.detail .side-menu{
 		height: 40vh;
-	}
+	}*/
 
 	h4.title{
 		font-size: 22px;
