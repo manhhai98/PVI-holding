@@ -84,7 +84,7 @@ window.onload = function() {
       split.create();
     });
     return webdev;
-  })();
+  });
 };
 
 
