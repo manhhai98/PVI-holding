@@ -87,7 +87,15 @@ window.onload = function() {
   });
 };
 
+    function setHeight() {
+      var windowHeight = $(window).innerHeight() - $('.header').innerHeight();
+      $('.banner-slide,.detail .side-menu').css('height', windowHeight);
+    };
+    setHeight();
 
+    $(window).resize(function() {
+      setHeight();
+    });
   
 
     $('#banner-slide').owlCarousel({
