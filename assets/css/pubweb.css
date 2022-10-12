@@ -665,7 +665,7 @@ header .header-bottom .nav .nav-item:hover .dropdown{
 
 .banner .logo{
     position: absolute;
-    padding: 40px 35px;
+    padding: 20px;
     background: #E1EAF9;
     left: 35px;
 	width: 130px;
@@ -673,11 +673,11 @@ header .header-bottom .nav .nav-item:hover .dropdown{
 }
 
 #banner-slide .logo img{
-	width: 80px;
+	width: 160px;
 }
 
-.banner-slide,.detail .side-menu{
-	height: 760px;
+.banner-slide.fix-height, .detail .side-menu.fix-height{
+	height: 760px !important;
 }
 
 /* #banner-slide img{
@@ -1264,11 +1264,11 @@ figcaption{
 
 .detail .banner .main-content{
 	background: #0372FF;
-	padding: 90px 0 1px;
+	padding: 70px 0 1px;
 }
 
 .detail .banner .main-content .breadcrumb-area{
-	margin-bottom: 150px;
+	margin-bottom: 80px;
 }
 
 .breadcrumb li {
@@ -2292,8 +2292,8 @@ a.file,a.file:hover{
 		padding: 95px 0 1px;
 	}
 
-	.banner-slide,.detail .side-menu{
-		height: 950px;
+	.banner-slide.fix-height,.detail .side-menu.fix-height{
+		height: 950px !important;
 	}
 }
 
@@ -2308,8 +2308,8 @@ a.file,a.file:hover{
 		font-size: 35px;
 		margin-bottom: 50px;
 	}
-	.banner-slide,.detail .side-menu{
-		height: 1270px;
+	.banner-slide.fix-height,.detail .side-menu.fix-height{
+		height: 1270px !important;
 	}
 	.side-menu .text{
 		flex-basis: 38%;
@@ -2470,8 +2470,8 @@ a.file,a.file:hover{
 		height: 117px;
 	}
 
-	.banner-slide,.detail .side-menu{
-		height: 710px;
+	.banner-slide.fix-height,.detail .side-menu.fix-height{
+		height: 710px !important;
 	}
 
 	/*.detail .side-menu{
@@ -2538,8 +2538,8 @@ a.file,a.file:hover{
 		padding: 10px 0;
 	}
 
-	.banner-slide,.detail .side-menu{
-		height: 640px;
+	.banner-slide.fix-height,.detail .side-menu.fix-height{
+		height: 640px !important;
 	}
 
 	.detail .banner .main-content .breadcrumb-area{
@@ -2564,8 +2564,8 @@ a.file,a.file:hover{
 	    width: 100px;
 	}
 
-	.banner-slide,.detail .side-menu{
-		height: 600px;
+	.banner-slide.fix-height,.detail .side-menu.fix-height{
+		height: 600px !important;
 	}
 
 	.split div {
@@ -2676,8 +2676,8 @@ a.file,a.file:hover{
 		top: 35%;
 	}
 
-	.banner-slide{
-		height: auto;
+	.banner-slide.fix-height,.detail .side-menu.fix-height{
+		height: auto !important;
 	}
 
 	.detail .side-menu{
