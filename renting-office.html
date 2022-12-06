@@ -11,176 +11,14 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/aos-master/dist/aos.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/fancybox.css">
 	<link rel="stylesheet" href="assets/css/pubweb.css">
 </head>
 <style>
-	.banner{
-		overflow: hidden;
-	}
-
-	.banner .main .title{
-		margin-bottom: 70px;
-	}
-
-	.banner .main .sub-title{
-		font-family: "Roboto-Black";
-	}
-
-	.split div:nth-child(2),.split div:nth-child(3),.split div:nth-child(4),
-	.split div:nth-child(5),.split div:nth-child(8),.split div:nth-child(9)
-	,.split div:nth-child(10),.split div:nth-child(11){
-		display: none;
-	}
-
-	.split div:nth-child(14),.split div:nth-child(49){
-		transition-delay: 0.3s;
-	}
-
-	.split div:nth-child(20),.split div:nth-child(43){
-		transition-delay: 0.5s;
-	}
-
-	.split div:nth-child(26),.split div:nth-child(37){
-		transition-delay: 0.7s;
-	}
-
-	.split div:nth-child(32),.split div:nth-child(31){
-		transition-delay: 0.9s;
-	}
-
-	.split div:nth-child(38),.split div:nth-child(25){
-		transition-delay: 1.1s;
-	}
-
-	.split div:nth-child(44),.split div:nth-child(19){
-		transition-delay: 1.3s;
-	}
-
-	.split div:nth-child(45),.split div:nth-child(13){
-		transition-delay: 1.5s;
-	}
-
-	.split div:nth-child(39),.split div:nth-child(7){
-		transition-delay: 1.7s;
-	}
-
-	.split div:nth-child(33),.split div:nth-child(6){
-		transition-delay: 1.9s;
-	}
-
-	.split div:nth-child(27),.split div:nth-child(12){
-		transition-delay: 2.1s;
-	}
-
-	.split div:nth-child(21),.split div:nth-child(18){
-		transition-delay: 2.3s;
-	}
-
-	.split div:nth-child(15),.split div:nth-child(24){
-		transition-delay: 2.5s;
-	}
-
-	.split div:nth-child(16),.split div:nth-child(30){
-		transition-delay: 2.7s;
-	}
-	.split div:nth-child(22),.split div:nth-child(36){
-		transition-delay: 2.9s;
-	}
-	.split div:nth-child(28),.split div:nth-child(42){
-		transition-delay: 3.1s;
-	}
-	.split div:nth-child(34),.split div:nth-child(48){
-		transition-delay: 3.3s;
-	}
-	.split div:nth-child(40),.split div:nth-child(47){
-		transition-delay: 3.5s;
-	}
-	.split div:nth-child(46),.split div:nth-child(41){
-		transition-delay: 3.7s;
-	}
-	.split div:nth-child(35){
-		transition-delay: 3.9s;
-	}
-	.split div:nth-child(29){
-		transition-delay: 4.1s;
-	}
-	.split div:nth-child(23){
-		transition-delay: 4.3s;
-	}
-	.split div:nth-child(17){
-		transition-delay: 4.5s;
-	}
-	/* .split div {
-		width: 128px;
-		height: 128px;
-	} */
-	@media only screen and (min-width: 1700px){
-
-		.banner .main .title{
-			margin-bottom: 35px;
-		}
-	}
-
-	@media only screen and (min-width: 2200px){
-		.banner .main .title{
-			margin-bottom: 80px;
-		}
-		.split div {
-			width: 213px;
-			height: 213px;
-		}
-	}
-	@media only screen and (max-width: 1441px){
-		.split div {
-			width: 120px;
-			height: 120px;
-		}
-	}
-	@media only screen and (max-width: 1399px){
-		.split div {
-			width: 117px;
-			height: 117px;
-		}
-	}
-	@media only screen and (max-width: 1280px){
-		.split div {
-			width: 107px;
-			height: 107px;
-		}
-	}
-	@media only screen and (max-width: 1200px){
-		.split div {
-			width: 100px;
-			height: 100px;
-		}
-	}
-	@media only screen and (max-width: 992px){
-		.split div {
-			width: 84px;
-			height: 84px;
-		}
-	}
-	@media only screen and (max-width: 768px){
-		.split div {
-			width: 65px;
-			height: 65px;
-		}
-	}
-	@media only screen and (max-width: 576px){
-		.split div {
-			width: 50px;
-			height: 50px;
-		}
-	}
-	@media only screen and (max-width: 481px){
-		.split div {
-			width: 42px;
-			height: 42px;
-		}
+	.banner-img {
+		background-image: url(assets/images/banner5.png);
 	}
 </style>
 <body>
@@ -457,29 +295,24 @@
 
 	<!-- Banner section start -->
 	<section class="banner">
-		<div class="banner-slide fix-height">
-		    <div class="item bg-img1">
-		    	<div class="row justify-content-end" style="height: 100%;">
+		<div class="banner-slide">
+		    <div class="item banner-img">
+		    	<div class="row" style="height: 100%;">
 		    		<div class="col-3">
-		    			<div class="main">
+		    			<div class="main main2">
 							<div class="container">
-								<div class="content animate__animated animate__fadeInUp animate__delay-1s">
+								<div class="content">
 									<h2 class="title">Cho thuê<br> văn phòng</h2>
 									<h5 class="sub-title">hotline: 093 453 900 </h5>
 								</div>		
 							</div>	
 						</div>
 		    		</div>
-		    		<div class="col-8 pr-0 pl-0">
-		    			<div class="split">
-							<img src="assets/images/banner5.png" alt="" class="banner-img">
-						</div>
-		    		</div>
 		    	</div>
 		    </div>
 		</div>
 		<div class="wrapper">
-			<div class="side-menu animate__animated animate__fadeInLeft animate__delay-1s">
+			<div class="side-menu">
 				<div class="social">
 					<ul>
 						<li>
@@ -501,7 +334,7 @@
 				
 	</section>
 	<!-- Banner section end -->
-	<div class="bottom-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<div class="bottom-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 mb-30">
@@ -529,15 +362,15 @@
 	<section class="section">
 		<div class="container">
 			<div class="wrapper">
-				<h4 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Giới thiệu</h4>
+				<h4 class="title">Giới thiệu</h4>
 				<div class="row">
-					<div class="col-lg-6 mb-30" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+					<div class="col-lg-6 mb-30">
 						<div class="item">
 							<p>PVI Tower tự hào là công trình toà nhà văn phòng cao cấp đạt tiêu chuẩn quốc tế hạng A toạ lạc tại số 1 phố Phạm Văn Bạch, phường Yên Hoà, quận Cầu Giấy. Toà nhà là trụ sở chính của Công ty cổ phần PVI - PVI Holdings và tập trung nhiều các công ty, tập đoàn lớn trên thế giới thuộc các nhóm ngành nghề phát triển như Tài chính, Bảo hiểm, Công nghệ thông tin.</p>
 							<p>Với thiết kế sang trọng, diện tích sàn lớn, cùng vị trí giao thông thuận tiện, PVI Tower là điểm đến hoàn hảo cho các doanh nghiệp để làm việc và phát triển. Tại đây, chúng tôi quan tâm đến trải nghiệm của khách hàng và không ngừng nâng cấp chất lượng dịch vụ nhằm mang đến cho khách hàng môi trường làm việc chuyên nghiệp, tiện nghi.</p>
 						</div>
 					</div>
-					<div class="col-lg-6 mb-30" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+					<div class="col-lg-6 mb-30">
 						<img src="assets/images/Rectangle 218.png" alt="">
 					</div>
 				</div>
@@ -547,7 +380,7 @@
 	<!-- section end -->
 
 	<!-- section start -->
-	<section class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section">
 		<div class="container">
 			<div class="wrapper">
 				<h4 class="title">Vị trí</h4>
@@ -578,11 +411,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="row ml-0 mr-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+		<div class="row ml-0 mr-0">
 			<div class="col-md-5" style="padding:0">
 				<img src="assets/images/Rectangle 290-1.png" alt="">
 			</div>
-			<div class="col-md-7" style="padding:0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+			<div class="col-md-7">
 				<div class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14899.585626821448!2d105.84077260000001!3d20.9967893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1663819956023!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
@@ -591,7 +424,7 @@
 	</section>
 	<!-- section end -->
 
-	<section class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section">
 		<div class="container">
 			<div class="wrapper">
 				<h4 class="title">Văn phòng</h4>
@@ -655,7 +488,7 @@
 	</section>
 
 	<!-- Contact partners start -->
-	<section class="partners section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="partners section">
 		<div class="line">
 			<div class="container">
 				<div class="wrapper">
@@ -689,7 +522,7 @@
 	</section>
 	<!-- Contact partners end -->
 
-	<section class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section">
 		<div class="container">
 			<div class="wrapper">
 				<h4 class="title">Dịch vụ và Tiện ích</h4>
@@ -719,7 +552,7 @@
 	</section>
 
 	<!-- Contact partners start -->
-	<section class="section partners" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section partners">
 		<div class="line">
 			<div class="container">
 				<div class="wrapper">
@@ -759,9 +592,9 @@
 			<div class="wrapper">
 				<div class="row">
 					<div class="col-12">
-						<h4 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Liên hệ</h4>
+						<h4 class="title">Liên hệ</h4>
 					</div>
-					<div class="col-md-6 contact-info mb-30" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+					<div class="col-md-6 contact-info mb-30">
 						<h5>Tập đoàn PVI</h5>
 						<p><span>Địa chỉ:</span>Tòa nhà PVI, 1 Phạm Văn Bạch - Cầu Giấy - Hà Nội</p>
 						<p><span>Điện thoại:</span> 024 37342299 </p>
@@ -769,8 +602,8 @@
 						<p><span>Website:</span> www.pvi.com.vn</p>
 						<p><span>Email:</span> contact@pvi.com.vn</p>
 					</div>
-					<div class="col-md-6 mb-30" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
-						<form action="#" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+					<div class="col-md-6 mb-30">
+						<form action="#">
                             <div class="single-input mb-30">
                                 <input type="text" id="name" autocomplete="off">
                                 <label for="text">Họ và tên</label>
@@ -919,52 +752,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/aos-master/dist/aos.js"></script>
     <script src="assets/js/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
-	<script>
-		var Split = function() {
-		this.$t = $(".split");    
-		this.gridX = 8;
-		this.gridY = 6;
-		this.w = this.$t.width();
-		this.h = this.$t.height();
-		this.img = $("img", this.$t).attr("src");
-		// this.delay = 0.3;
-		
-		this.create = function() {
-			$("div", this.$t).remove();
-			
-			var x = 0;
-			var y = 0;
-			for (x = 0; x < this.gridX; x++) {
-			for (y = 0; y < this.gridY; y++) {
-				// var width = this.w / this.gridX * 101 / this.w + "%",
-				//     height = this.h / this.gridY * 101 / this.h + "%",
-				var  top = this.h / this.gridY * y * 100 / this.h + "%",
-					left = this.w / this.gridX * x * 100 / this.w + "%",
-					bgPosX = -(this.w / this.gridX * x) + "px",
-					bgPosY = -(this.h / this.gridY * y) + "px";
-		
-				$("<div />")
-				.css({
-				top: top,
-				left: left,
-				// width: width,
-				// height: height,
-				backgroundImage: "url(" + this.img + ")",
-				backgroundPosition: bgPosX + " " + bgPosY,
-				backgroundSize: this.w + "px"
-				// transitionDelay: x * this.delay + y * this.delay + "s"
-				})
-				.appendTo(this.$t);
-			}
-			}
-		};
-		
-		this.create();
-
-		};
-	</script>
 </body>
 </html>

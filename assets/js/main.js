@@ -10,14 +10,6 @@ $(function ($) {
         }  
     })
 
-    AOS.init({
-        once: true,
-    });
-
-    $(window).on('load', function () {
-      $('#loading').hide();
-    }) 
-
     $('.search .btn').on('click', function(){
       $('.search-input').toggleClass('open');
     })
@@ -58,34 +50,11 @@ $(function ($) {
 
     $('.contact-form input,.contact-form textarea').on('click', function(){
       $(this).addClass('active');
-      $('.contact-form input,.contact-form textarea').not(this).removeClass('active')
     })
 
     $('.coucil a.name').on('click', function(){
       $(this).parent().next().slideToggle();
     })
-
-  setTimeout(function() {
-       $('.split').addClass('active')
-    }, 400);
-  
- 
-window.onload = function() {
-  var split = new Split();
-  var webdev = (function datwebdev() {
-    var webdev = new dat.webdev();
-    webdev.add(split, "gridX", 1, 20).step(1).onChange(function(newValue) {
-      split.create();
-    });
-    webdev.add(split, "gridY", 1, 20).step(1).onChange(function(newValue) {
-      split.create();
-    });
-    webdev.add(split, "delay", 0, 0.3).step(0.01).onChange(function(newValue) {
-      split.create();
-    });
-    return webdev;
-  });
-};
 
     function setHeight() {
       var windowHeight = $(window).innerHeight() - $('.header').innerHeight();

@@ -11,209 +11,32 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/aos-master/dist/aos.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/fancybox.css">
 	<link rel="stylesheet" href="assets/css/pubweb.css">
 </head>
+
 <style>
-	.banner{
-		overflow: hidden;
+	.banner-img {
+		background-image: url(assets/images/banner2.png);
 	}
-
-	.split div{
-		width: 126px;
-    	height: 125px;
+	.banner .main p{
+		color: #fff;
 	}
-
 	.banner .main .sub-title{
-		font-family: "Roboto-Black";
 		margin-bottom: 0;
+		color: #fff;
 	}
-
 	.banner .main .title{
-		margin-bottom: 35px;
-	}
-
-	.split div:nth-child(5),.split div:nth-child(6),.split div:nth-child(7),
-	.split div:nth-child(34),.split div:nth-child(32),.split div:nth-child(33){
-		display: none;
-	}
-
-	.split div:nth-child(2),.split div:nth-child(37){
-		transition-delay: 0.3s;
-	}
-
-	.split div:nth-child(8),.split div:nth-child(31){
-		transition-delay: 0.5s;
-	}
-
-	.split div:nth-child(14),.split div:nth-child(25){
-		transition-delay: 0.7s;
-	}
-
-	.split div:nth-child(20),.split div:nth-child(19){
-		transition-delay: 0.9s;
-	}
-
-	.split div:nth-child(26),.split div:nth-child(13){
-		transition-delay: 1.1s;
-	}
-
-	.split div:nth-child(27),.split div:nth-child(12){
-		transition-delay: 1.3s;
-	}
-
-	.split div:nth-child(18),.split div:nth-child(21){
-		transition-delay: 1.5s;
-	}
-
-	.split div:nth-child(15),.split div:nth-child(24){
-		transition-delay: 1.7s;
-	}
-
-	.split div:nth-child(9),.split div:nth-child(30){
-		transition-delay: 1.9s;
-	}
-
-	.split div:nth-child(3),.split div:nth-child(36){
-		transition-delay: 2.1s;
-	}
-
-	.split div:nth-child(4),.split div:nth-child(35){
-		transition-delay: 2.3s;
-	}
-
-	.split div:nth-child(10),.split div:nth-child(29){
-		transition-delay: 2.5s;
-	}
-	.split div:nth-child(16),.split div:nth-child(23){
-		transition-delay: 2.7s;
-	}
-	.split div:nth-child(22),.split div:nth-child(17){
-		transition-delay: 2.9s;
-	}
-	.split div:nth-child(28),.split div:nth-child(11){
-		transition-delay: 3.1s;
-	}
-	@media only screen and (min-width: 1700px){
-		.split div {
-			width: 157px;
-			height: 157px;
-		}
-	}
-
-	@media only screen and (min-width: 2200px){
-
-		.split div {
-			width: 210px;
-    		height: 205px;
-		}
-	}
-
-
-
-	@media only screen and (max-width: 1441px){
-		.split div {
-			width: 117px;
-			height: 117px;
-		}
-
-		.banner .main .title{
-			margin-bottom: 25px;
-		}
-	}
-
-	@media only screen and (max-width: 1281px){
-		.split div {
-			width: 105px;
-			height: 105px;
-		}
-	}
-
-	@media only screen and (max-width: 992px){
-		.split div {
-			width: 81px;
-			height: 81px;
-		}
-	}
-	@media only screen and (max-width: 801px){
-		.split div {
-			width: 66px;
-			height: 66px;
-		}
-	}
-	@media only screen and (max-width: 768px){
-		.split div {
-			width: 63px;
-			height: 63px;
-		}
-	}
-	@media only screen and (max-width: 713px){
-		.split div {
-			width: 58px;
-			height: 58px;
-		}
-	}
-	@media only screen and (max-width: 641px){
-		.split div {
-			width: 53px;
-			height: 53px;
-		}
-	}
-	@media only screen and (max-width: 601px){
-		.split div {
-			width: 48px;
-			height: 48px;
-		}
-	}
-	@media only screen and (max-width: 576px){
-		.split div {
-			width: 47px;
-			height: 47px;
-		}
-		.banner .main .title{
-			margin-bottom: 10px;
-		}
-	}
-	@media only screen and (max-width: 481px){
-		.split div {
-			width: 40px;
-			height: 40px;
-		}
-	}
-	@media only screen and (max-width: 415px){
-		.split div {
-			width: 34px;
-			height: 34px;
-		}
-	}
-	@media only screen and (max-width: 391px){
-		.split div {
-			width: 32px;
-			height: 32px;
-		}
-	}
-	@media only screen and (max-width: 385px){
-		.split div {
-			width: 31px;
-			height: 31px;
-		}
-	}
-	@media only screen and (max-width: 361px){
-		.split div {
-			width: 29px;
-			height: 29px;
-		}
-	}
-	@media only screen and (max-width: 321px){
-		.split div {
-			width: 26px;
-			height: 26px;
-		}
+		background: linear-gradient(90deg, #FFFFFF 3.23%, rgba(255, 255, 255, 0.489607) 35%, rgba(255, 255, 255, 0.303204) 90%, rgba(255, 255, 255, 0) 160%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
 	}
 </style>
+
 <body>
 	<!-- Header section start -->
 	<header class="header">
@@ -488,34 +311,29 @@
 
 	<!-- Banner section start -->
 	<section class="banner">
-		<div class="banner-slide fix-height">
-		    <div class="item bg-img1">
-		    	<div class="row mr-0 ml-0 justify-content-around align-items-end" style="height: 100%;">
+		<div class="banner-slide">
+		    <div class="item banner-img">
+		    	<div class="row" style="height: 100%;">
 		    		<div class="col-3">
 		    			<div class="main">
-					<div class="container">
-						<div class="content animate__animated animate__fadeInUp">
-							<h5 class="sub-title">Về chúng tôi</h5>
-							<h2 class="title">Pvi holdings</h2>
-							<p>PVI hoạt động theo mô hình công ty mẹ và công ty con với các hoạt động kinh doanh 
-								<br>lõi bao gồm: <br>
-								Bảo hiểm phi nhân thọ, tái bảo hiểm; 
-								quản lý quỹ đầu tư và danh mục chứng khoán, Tư vấn đầu tư.
-								</p>
-						</div>		
-					</div>	
-				</div>
-		    		</div>
-		    		<div class="col-6 pr-0 pl-0 h-100">
-		    			<div class="split">
-		    				<img src="assets/images/banner2.png" alt="">
-		    			</div>
+							<div class="container">
+								<div class="content animate__animated animate__fadeInUp">
+									<h5 class="sub-title">Về chúng tôi</h5>
+									<h2 class="title">Pvi holdings</h2>
+									<p>PVI hoạt động theo mô hình công ty mẹ và công ty con với các hoạt động kinh doanh 
+										<br>lõi bao gồm: <br>
+										Bảo hiểm phi nhân thọ, tái bảo hiểm; 
+										quản lý quỹ đầu tư và danh mục chứng khoán, Tư vấn đầu tư.
+									</p>
+								</div>		
+							</div>	
+						</div>
 		    		</div>
 		    	</div>
 		    </div>
 		</div>
 		<div class="wrapper">
-			<div class="side-menu animate__animated animate__fadeInLeft animate__delay-2s">
+			<div class="side-menu">
 				<div class="social">
 					<ul>
 						<li>
@@ -543,7 +361,7 @@
 			<div class="wrapper">
 				<div class="row">
 					<div class="col-lg-4 col-md-6 mb-30">
-						<div class="item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+						<div class="item">
 							<div class="thumb">
 								<img src="assets/images/about1.png" alt="">
 							</div>
@@ -554,7 +372,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 mb-30">
-						<div class="item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+						<div class="item">
 							<div class="thumb">
 								<img src="assets/images/about2.png" alt="">
 							</div>
@@ -565,7 +383,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 mb-30">
-						<div class="item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+						<div class="item">
 							<div class="thumb">
 								<img src="assets/images/about3.png" alt="">
 							</div>
@@ -576,7 +394,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 mb-30">
-						<div class="item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+						<div class="item">
 							<div class="thumb">
 								<img src="assets/images/about4.png" alt="">
 							</div>
@@ -587,7 +405,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 mb-30">
-						<div class="item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+						<div class="item">
 							<div class="thumb">
 								<img src="assets/images/about5.png" alt="">
 							</div>
@@ -607,7 +425,7 @@
 	<section class="section about-section members">
 		<div class="container">
 			<div class="wrapper">
-				<div class="heading" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+				<div class="heading">
 					<h4 class="title gray-color text-center">Các thương hiệu</h4>
 					<img src="assets/images/logo.png" alt="">
 				</div>
@@ -616,58 +434,50 @@
 		<div class="row mr-0 ml-0">
 			<div class="col-lg-3 col-md-6" style="padding:0">
 				<div class="item bg-color1">
-					<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-						<div class="logo">
-							<img src="assets/images/pvi-holding.png" alt="">
-						</div>
-						<h5>PVI Holdings</h5>
-						<p>Công ty mẹ PVI Holdings thực hiện các chức năng: quản trị vốn, đầu tư, chiến lược – kế hoạch, tổ chức nhân sự, thương hiệu và công nghệ thông tin. Các cổ đông chiến lược lớn của PVI gồm Tập đoàn Dầu khí Việt Nam, HDI Global SE – Nhà bảo hiểm công nghiệp hàng đầu của Đức và Tập đoàn tài chính quốc tế IFC.</p>
-						<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
-					</div>	
+					<div class="logo">
+						<img src="assets/images/pvi-holding.png" alt="">
+					</div>
+					<h5>PVI Holdings</h5>
+					<p>Công ty mẹ PVI Holdings thực hiện các chức năng: quản trị vốn, đầu tư, chiến lược – kế hoạch, tổ chức nhân sự, thương hiệu và công nghệ thông tin. Các cổ đông chiến lược lớn của PVI gồm Tập đoàn Dầu khí Việt Nam, HDI Global SE – Nhà bảo hiểm công nghiệp hàng đầu của Đức và Tập đoàn tài chính quốc tế IFC.</p>
+					<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6" style="padding:0">
 				<div class="item bg-color2">
-					<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-						<div class="logo">
-							<img src="assets/images/pvi-insurance.png" alt="">
-						</div>
-						<h5>bảo hiểm pvi</h5>
-						<p>Bảo hiểm PVI kinh doanh bảo hiểm phi nhân thọ với mạng lưới hoạt động tại 64 tỉnh thành của Việt Nam, là nhà bảo hiểm công nghiệp số 1 tại Việt Nam. </p>
-						<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
-					</div>	
+					<div class="logo">
+						<img src="assets/images/pvi-insurance.png" alt="">
+					</div>
+					<h5>bảo hiểm pvi</h5>
+					<p>Bảo hiểm PVI kinh doanh bảo hiểm phi nhân thọ với mạng lưới hoạt động tại 64 tỉnh thành của Việt Nam, là nhà bảo hiểm công nghiệp số 1 tại Việt Nam. </p>
+					<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6" style="padding:0">
 				<div class="item bg-color3">
-					<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
-						<div class="logo">
-							<img src="assets/images/pvi-re.png" alt="">
-						</div>
-						<h5>tái bảo hiểm pvire</h5>
-						<p>PVI Re là nhà tái bảo hiểm được đánh giá cao tại thị trường Việt Nam và khu vực Đông Nam Á. Trải qua 10 năm phát triển, công ty đã trở thành công ty đại chúng, niêm yết trên sàn chứng khoán, tiếp tục vươn mình, liên tiếp đạt tăng trưởng doanh thu và lợi nhuận.</p>
-						<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
+					<div class="logo">
+						<img src="assets/images/pvi-re.png" alt="">
 					</div>
+					<h5>tái bảo hiểm pvire</h5>
+					<p>PVI Re là nhà tái bảo hiểm được đánh giá cao tại thị trường Việt Nam và khu vực Đông Nam Á. Trải qua 10 năm phát triển, công ty đã trở thành công ty đại chúng, niêm yết trên sàn chứng khoán, tiếp tục vươn mình, liên tiếp đạt tăng trưởng doanh thu và lợi nhuận.</p>
+					<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6" style="padding:0">
 				<div class="item bg-color4">
-					<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
-						<div class="logo">
-							<img src="assets/images/pvi-am.png" alt="">
-						</div>
-						<h5>QUẢN LÝ TÀI SẢN PVIAm</h5>
-						<p>PVIAM là 1 trong 5 công ty quản lý quỹ có giá trị ủy thác và tư vấn đầu tư lớn nhất thị trường Việt Nam, cung cấp các giải pháp quản lý quỹ, danh mục và tư vấn đầu tư.
-						</p>
-						<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
+					<div class="logo">
+						<img src="assets/images/pvi-am.png" alt="">
 					</div>
+					<h5>QUẢN LÝ TÀI SẢN PVIAm</h5>
+					<p>PVIAM là 1 trong 5 công ty quản lý quỹ có giá trị ủy thác và tư vấn đầu tư lớn nhất thị trường Việt Nam, cung cấp các giải pháp quản lý quỹ, danh mục và tư vấn đầu tư.
+					</p>
+					<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Members section end -->
 
-	<section class="section about-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section about-section">
 		<div class="container">
 			<div class="wrapper">
 				<h4 class="title text-center">Giải thưởng và danh hiệu</h4>
@@ -720,13 +530,25 @@
 	<section class="section about-section contact-info">
 		<div class="container">
 			<div class="wrapper">
-				<img src="assets/images/Frame.png" alt="" class="bg-img">
+				<svg class="bg-img" xmlns="http://www.w3.org/2000/svg" width="236" height="300" viewBox="0 0 236 300" fill="none">
+					<g style="mix-blend-mode:screen" clip-path="url(#clip0_739_2078)">
+					<g opacity="0.55">
+					<path d="M225.35 240.524L164.58 240.314C158.04 239.814 151.6 242.204 146.96 246.854L104.81 289.074C101.77 292.114 99.3202 295.614 97.4902 299.374H194.07L233.92 251.444C238.87 242.554 228.5 240.084 225.35 240.524Z" fill="#183665"/>
+					<path d="M160.01 201.544L206.05 156.594C208.99 154.114 207.64 149.324 203.84 148.754L121.49 136.684C109.64 134.944 99.12 128.164 92.64 118.094L30.63 21.6644L30.34 22.2444C25.24 11.8044 13.51 3.71438 0 0.234375V101.914C0.23 102.154 0.47 102.384 0.67 102.674L49.35 175.614C56.72 186.664 68.35 194.154 81.46 196.304L144.62 206.654C150.27 207.514 155.99 205.614 160.01 201.544Z" fill="#183665"/>
+					</g>
+					</g>
+					<defs>
+					<clipPath id="clip0_739_2078">
+					<rect width="235.24" height="299.14" fill="white" transform="translate(0 0.234375)"/>
+					</clipPath>
+					</defs>
+				</svg>
 				<div class="row mr-0 ml-0">
 					<div class="col-md-5">
-						<h4 class="title white-text text-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">PVI Holdings</h4>
+						<h4 class="title white-text text-center">PVI Holdings</h4>
 					</div>
 					<div class="col-md-7">
-						<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+						<div>
 							<p><span>Địa chỉ:</span>Tòa nhà PVI, 1 Phạm Văn Bạch - Cầu Giấy - Hà Nội</p>
 							<p><span>Điện thoại:</span> 024 37342299 </p>
 							<p><span>Fax:</span> 024 37342929</p>
@@ -746,10 +568,10 @@
 			<div class="wrapper">
 				<div class="row">
 					<div class="col-md-6">
-						<h4 class="title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Liên hệ với chúng tôi</h4>
+						<h4 class="title">Liên hệ với chúng tôi</h4>
 					</div>
 					<div class="col-md-6">
-						<form action="#" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+						<form action="#">
                             <div class="single-input mb-30">
                                 <input type="text" id="name" autocomplete="off">
                                 <label for="text">Họ và tên</label>

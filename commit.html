@@ -11,113 +11,21 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/aos-master/dist/aos.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/fancybox.css">
 	<link rel="stylesheet" href="assets/css/pubweb.css">
 </head>
 <style>
-	h4.title{
+	.card h4.title{
 		font-weight: 400;
 		font-family: "Roboto";
 	}
-
-	
-
-	.split div:nth-child(2),.split div:nth-child(3),.split div:nth-child(4),
-	.split div:nth-child(5),.split div:nth-child(8),.split div:nth-child(9)
-	,.split div:nth-child(10),.split div:nth-child(11){
-		display: none;
+	.card p{
+		margin-bottom: 10px;
 	}
-
-	.split div:nth-child(14),.split div:nth-child(49){
-		transition-delay: 0.3s;
-	}
-
-	.split div:nth-child(20),.split div:nth-child(43){
-		transition-delay: 0.5s;
-	}
-
-	.split div:nth-child(26),.split div:nth-child(37){
-		transition-delay: 0.7s;
-	}
-
-	.split div:nth-child(32),.split div:nth-child(31){
-		transition-delay: 0.9s;
-	}
-
-	.split div:nth-child(38),.split div:nth-child(25){
-		transition-delay: 1.1s;
-	}
-
-	.split div:nth-child(44),.split div:nth-child(19){
-		transition-delay: 1.3s;
-	}
-
-	.split div:nth-child(45),.split div:nth-child(13){
-		transition-delay: 1.5s;
-	}
-
-	.split div:nth-child(39),.split div:nth-child(7){
-		transition-delay: 1.7s;
-	}
-
-	.split div:nth-child(33),.split div:nth-child(6){
-		transition-delay: 1.9s;
-	}
-
-	.split div:nth-child(27),.split div:nth-child(12){
-		transition-delay: 2.1s;
-	}
-
-	.split div:nth-child(21),.split div:nth-child(18){
-		transition-delay: 2.3s;
-	}
-
-	.split div:nth-child(15),.split div:nth-child(24){
-		transition-delay: 2.5s;
-	}
-
-	.split div:nth-child(16),.split div:nth-child(30){
-		transition-delay: 2.7s;
-	}
-	.split div:nth-child(22),.split div:nth-child(36){
-		transition-delay: 2.9s;
-	}
-	.split div:nth-child(28),.split div:nth-child(42){
-		transition-delay: 3.1s;
-	}
-	.split div:nth-child(34),.split div:nth-child(48){
-		transition-delay: 3.3s;
-	}
-	.split div:nth-child(40),.split div:nth-child(47){
-		transition-delay: 3.5s;
-	}
-	.split div:nth-child(46),.split div:nth-child(41){
-		transition-delay: 3.7s;
-	}
-	.split div:nth-child(35){
-		transition-delay: 3.9s;
-	}
-	.split div:nth-child(29){
-		transition-delay: 4.1s;
-	}
-	.split div:nth-child(23){
-		transition-delay: 4.3s;
-	}
-	.split div:nth-child(17){
-		transition-delay: 4.5s;
-	}
-	.bg-img svg{
-		height: 100%;
-		width: 100%;
-	}
-	@media only screen and (min-width: 2200px){
-		.bg-img{
-			width: 300px;
-    		height: 400px;
-		}
+	.banner-img {
+		background-image: url(assets/images/banner4.png);
 	}
 </style>
 <body>
@@ -394,28 +302,23 @@
 
 	<!-- Banner section start -->
 	<section class="banner">
-		<div class="banner-slide fix-height">
-		    <div class="item bg-img1">
-		    	<div class="row mr-0 ml-0 justify-content-end" style="height: 100%;">
+		<div class="banner-slide">
+		    <div class="item banner-img">
+		    	<div class="row" style="height: 100%;">
 		    		<div class="col-3">
-		    			<div class="main">
-					<div class="container">
-						<div class="content animate__animated animate__fadeInUp animate__delay-1s">
-							<h2 class="title">Cam kết<br> về bền vững</h2>
-						</div>		
-					</div>	
-				</div>
-		    		</div>
-		    		<div class="col-8 pr-0 pl-0">
-		    			<div class="split">
-							<img src="assets/images/banner4.png" alt="" class="banner-img">
+		    			<div class="main main2">
+							<div class="container">
+								<div class="content">
+									<h2 class="title">Cam kết<br> về bền vững</h2>
+								</div>		
+							</div>	
 						</div>
 		    		</div>
 		    	</div>
 		    </div>
 		</div>
 		<div class="wrapper">
-			<div class="side-menu animate__animated animate__fadeInLeft animate__delay-1s">
+			<div class="side-menu">
 				<div class="social">
 					<ul>
 						<li>
@@ -438,17 +341,28 @@
 	<!-- Banner section end -->	
 
 	<!-- section start -->
-	<section class="section detail-content commit" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section detail-content commit">
 		<div class="container">
 			<div class="wrapper">
 				<div class="card">
 					<h4 class="title text-center white-text">tôn chỉ của pvi về phát triền bền vững</h4>
-					<p>Chúng tôi nhận ra tác động của chúng tôi đối với thế giới và tin tưởng vào việc tạo ra sự khác biệt tích cực trong các cộng đồng mà chúng tôi đang sống và làm việc. Trách nhiệm xã hội của doanh nghiệp là cam kết của doanh nghiệp trong việc đóng góp vào sự phát triển kinh tế bền vững - làm việc với người lao động, gia đình họ, cộng đồng địa phương và xã hội nói chung để nâng cao chất lượng cuộc sống, theo những cách thức vừa có lợi cho doanh nghiệp vừa có lợi cho sự phát triển.</p>
-					<p>Là một doanh nghiệp hướng tới con người, đóng góp lớn nhất của chúng tôi cho thế giới là nhờ vào đội ngũ những cá nhân xuất sắc, những người sống theo các giá trị của PVI về quan hệ đối tác, dịch vụ, sự nhanh nhẹn, dẫn dắt và khiêm tốn để tạo ra sự khác biệt tích cực trong cộng đồng mà chúng tôi đang sống và làm việc . Chúng tôi cố gắng trở thành công ty dẫn đầu toàn khu vực trong lĩnh vực Bảo hiểm, Thị trường Vốn và Quản lý Tài sản, đồng thời xây dựng giá trị cho khách hàng và các bên liên quan bằng cách tận dụng đội ngũ đa dạng cũng như văn hóa phục hồi và đổi mới của chúng tôi.</p>
-					<!-- <img src="assets/images/Frame.png" alt="" class="bg-img"> -->
-					<div class="bg-img">
-						<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="507.65661252900236" viewBox="0, 0, 400,507.65661252900236"><g id="svgg"><path id="path0" d="" stroke="none" fill="#555555" fill-rule="evenodd"></path><path id="path1" d="" stroke="none" fill="#001155" fill-rule="evenodd"></path><path id="path2" d="" stroke="none" fill="#111155" fill-rule="evenodd"></path><path id="path3" d="" stroke="none" fill="#001c55" fill-rule="evenodd"></path><path id="path4" d="M350.486 265.661 L 349.420 266.821 350.580 265.755 C 351.660 264.763,351.882 264.501,351.646 264.501 C 351.594 264.501,351.072 265.023,350.486 265.661 M338.747 277.030 C 337.996 277.796,337.450 278.422,337.536 278.422 C 337.621 278.422,338.305 277.796,339.056 277.030 C 339.808 276.265,340.353 275.638,340.268 275.638 C 340.183 275.638,339.499 276.265,338.747 277.030 M326.516 289.018 L 324.981 290.642 326.605 289.107 C 327.498 288.262,328.229 287.532,328.229 287.483 C 328.229 287.252,327.942 287.509,326.516 289.018 M314.308 300.851 C 313.556 301.616,313.011 302.243,313.096 302.243 C 313.181 302.243,313.866 301.616,314.617 300.851 C 315.369 300.085,315.914 299.459,315.829 299.459 C 315.744 299.459,315.059 300.085,314.308 300.851 M302.243 312.606 C 301.491 313.372,300.946 313.998,301.031 313.998 C 301.116 313.998,301.801 313.372,302.552 312.606 C 303.304 311.841,303.849 311.214,303.764 311.214 C 303.679 311.214,302.994 311.841,302.243 312.606 M290.012 324.594 L 288.476 326.218 290.101 324.683 C 291.610 323.256,291.867 322.970,291.636 322.970 C 291.587 322.970,290.856 323.701,290.012 324.594 M277.804 336.427 C 277.052 337.193,276.507 337.819,276.592 337.819 C 276.677 337.819,277.361 337.193,278.113 336.427 C 278.864 335.661,279.410 335.035,279.324 335.035 C 279.239 335.035,278.555 335.661,277.804 336.427 M288.383 407.655 C 289.864 407.711,292.369 407.712,293.952 407.655 C 295.534 407.599,294.323 407.553,291.261 407.552 C 288.198 407.552,286.903 407.598,288.383 407.655 M377.507 407.964 C 378.663 408.023,380.472 408.023,381.529 407.963 C 382.585 407.902,381.640 407.854,379.428 407.854 C 377.216 407.855,376.351 407.904,377.507 407.964 " stroke="none" fill="#1c1c55" fill-rule="evenodd"></path><path id="path5" d="" stroke="none" fill="#141462" fill-rule="evenodd"></path><path id="path6" d="" stroke="none" fill="#0a1f5c" fill-rule="evenodd"></path><path id="path7" d="" stroke="none" fill="#0c2455" fill-rule="evenodd"></path><path id="path8" d="" stroke="none" fill="#15235c" fill-rule="evenodd"></path><path id="path9" d="M355.684 407.964 C 357.258 408.021,359.834 408.021,361.408 407.964 C 362.981 407.908,361.694 407.862,358.546 407.862 C 355.398 407.862,354.111 407.908,355.684 407.964 " stroke="none" fill="#08295a" fill-rule="evenodd"></path><path id="path10" d="" stroke="none" fill="#082562" fill-rule="evenodd"></path><path id="path11" d="" stroke="none" fill="#003333" fill-rule="evenodd"></path><path id="path12" d="" stroke="none" fill="#19295a" fill-rule="evenodd"></path><path id="path13" d="" stroke="none" fill="#182a5e" fill-rule="evenodd"></path><path id="path14" d="" stroke="none" fill="#162562" fill-rule="evenodd"></path><path id="path15" d="" stroke="none" fill="#0e2a5e" fill-rule="evenodd"></path><path id="path16" d="M281.129 407.653 C 282.022 407.715,283.484 407.715,284.377 407.653 C 285.271 407.590,284.540 407.539,282.753 407.539 C 280.967 407.539,280.236 407.590,281.129 407.653 M366.821 407.964 C 368.395 408.021,370.971 408.021,372.544 407.964 C 374.118 407.908,372.831 407.862,369.683 407.862 C 366.535 407.862,365.247 407.908,366.821 407.964 " stroke="none" fill="#0d285e" fill-rule="evenodd"></path><path id="path17" d="" stroke="none" fill="#092f55" fill-rule="evenodd"></path><path id="path18" d="M350.177 265.661 L 349.111 266.821 350.271 265.755 C 351.350 264.763,351.573 264.501,351.337 264.501 C 351.285 264.501,350.763 265.023,350.177 265.661 M338.581 276.953 L 337.046 278.577 338.670 277.042 C 339.563 276.197,340.294 275.467,340.294 275.418 C 340.294 275.187,340.007 275.444,338.581 276.953 M326.373 288.786 C 325.621 289.551,325.076 290.178,325.161 290.178 C 325.246 290.178,325.931 289.551,326.682 288.786 C 327.434 288.020,327.979 287.394,327.894 287.394 C 327.809 287.394,327.124 288.020,326.373 288.786 M314.142 300.773 L 312.606 302.398 314.230 300.862 C 315.740 299.436,315.996 299.149,315.766 299.149 C 315.717 299.149,314.986 299.880,314.142 300.773 M302.077 312.529 L 300.541 314.153 302.166 312.618 C 303.059 311.774,303.790 311.043,303.790 310.994 C 303.790 310.763,303.503 311.020,302.077 312.529 M289.869 324.362 C 289.117 325.128,288.572 325.754,288.657 325.754 C 288.742 325.754,289.426 325.128,290.178 324.362 C 290.929 323.596,291.475 322.970,291.389 322.970 C 291.304 322.970,290.620 323.596,289.869 324.362 M277.804 336.118 C 277.052 336.883,276.507 337.510,276.592 337.510 C 276.677 337.510,277.361 336.883,278.113 336.118 C 278.864 335.352,279.410 334.725,279.324 334.725 C 279.239 334.725,278.555 335.352,277.804 336.118 " stroke="none" fill="#1a2d5e" fill-rule="evenodd"></path><path id="path19" d="M39.907 21.752 C 39.907 21.805,40.360 22.258,40.913 22.757 L 41.918 23.666 41.009 22.660 C 40.162 21.723,39.907 21.513,39.907 21.752 " stroke="none" fill="#1a2c61" fill-rule="evenodd"></path><path id="path20" d="" stroke="none" fill="#192c62" fill-rule="evenodd"></path><path id="path21" d="" stroke="none" fill="#182868" fill-rule="evenodd"></path><path id="path22" d="" stroke="none" fill="#152f5d" fill-rule="evenodd"></path><path id="path23" d="M94.045 310.131 C 95.141 311.237,96.107 312.142,96.192 312.142 C 96.278 312.142,95.450 311.237,94.354 310.131 C 93.258 309.026,92.292 308.121,92.207 308.121 C 92.122 308.121,92.949 309.026,94.045 310.131 M344.548 407.964 C 346.121 408.021,348.697 408.021,350.271 407.964 C 351.845 407.908,350.557 407.862,347.409 407.862 C 344.261 407.862,342.974 407.908,344.548 407.964 " stroke="none" fill="#132d60" fill-rule="evenodd"></path><path id="path24" d="" stroke="none" fill="#113355" fill-rule="evenodd"></path><path id="path25" d="" stroke="none" fill="#122a65" fill-rule="evenodd"></path><path id="path26" d="M239.751 429.002 L 228.770 440.062 239.830 429.081 C 245.913 423.042,250.889 418.065,250.889 418.022 C 250.889 417.804,249.956 418.724,239.751 429.002 " stroke="none" fill="#102f5e" fill-rule="evenodd"></path><path id="path27" d="" stroke="none" fill="#092c61" fill-rule="evenodd"></path><path id="path28" d="M276.492 407.643 C 276.877 407.717,277.434 407.715,277.730 407.637 C 278.026 407.560,277.711 407.499,277.030 407.503 C 276.350 407.506,276.108 407.569,276.492 407.643 M333.240 407.964 C 334.721 408.021,337.226 408.021,338.809 407.965 C 340.391 407.908,339.180 407.862,336.118 407.862 C 333.055 407.861,331.760 407.907,333.240 407.964 " stroke="none" fill="#1a2f5e" fill-rule="evenodd"></path><path id="path29" d="" stroke="none" fill="#193260" fill-rule="evenodd"></path><path id="path30" d="" stroke="none" fill="#18315e" fill-rule="evenodd"></path><path id="path31" d="M321.964 407.964 C 323.538 408.021,326.114 408.021,327.688 407.964 C 329.261 407.908,327.974 407.862,324.826 407.862 C 321.678 407.862,320.391 407.908,321.964 407.964 " stroke="none" fill="#163061" fill-rule="evenodd"></path><path id="path32" d="M310.828 407.964 C 312.401 408.021,314.977 408.021,316.551 407.964 C 318.125 407.908,316.837 407.862,313.689 407.862 C 310.541 407.862,309.254 407.908,310.828 407.964 " stroke="none" fill="#13345e" fill-rule="evenodd"></path><path id="path33" d="M167.363 212.316 C 167.363 212.370,167.815 212.822,168.368 213.322 L 169.374 214.230 168.465 213.225 C 167.618 212.288,167.363 212.077,167.363 212.316 M344.625 271.152 C 343.873 271.918,343.328 272.544,343.413 272.544 C 343.498 272.544,344.183 271.918,344.934 271.152 C 345.686 270.387,346.231 269.760,346.146 269.760 C 346.061 269.760,345.376 270.387,344.625 271.152 M332.560 282.908 C 331.808 283.674,331.263 284.300,331.348 284.300 C 331.433 284.300,332.118 283.674,332.869 282.908 C 333.621 282.142,334.166 281.516,334.081 281.516 C 333.996 281.516,333.311 282.142,332.560 282.908 M320.495 294.664 C 319.744 295.429,319.198 296.056,319.283 296.056 C 319.368 296.056,320.053 295.429,320.804 294.664 C 321.556 293.898,322.101 293.271,322.016 293.271 C 321.931 293.271,321.246 293.898,320.495 294.664 M308.121 306.729 C 307.369 307.494,306.824 308.121,306.909 308.121 C 306.994 308.121,307.679 307.494,308.430 306.729 C 309.181 305.963,309.727 305.336,309.642 305.336 C 309.557 305.336,308.872 305.963,308.121 306.729 M296.056 318.484 C 295.304 319.250,294.759 319.876,294.844 319.876 C 294.929 319.876,295.614 319.250,296.365 318.484 C 297.116 317.718,297.662 317.092,297.577 317.092 C 297.492 317.092,296.807 317.718,296.056 318.484 M283.991 330.240 C 283.239 331.005,282.694 331.632,282.779 331.632 C 282.864 331.632,283.549 331.005,284.300 330.240 C 285.052 329.474,285.597 328.848,285.512 328.848 C 285.427 328.848,284.742 329.474,283.991 330.240 M272.061 341.918 L 271.152 342.923 272.158 342.015 C 272.711 341.515,273.163 341.063,273.163 341.009 C 273.163 340.770,272.908 340.981,272.061 341.918 " stroke="none" fill="#142f65" fill-rule="evenodd"></path><path id="path34" d="" stroke="none" fill="#133264" fill-rule="evenodd"></path><path id="path35" d="" stroke="none" fill="#123260" fill-rule="evenodd"></path><path id="path36" d="" stroke="none" fill="#113360" fill-rule="evenodd"></path><path id="path37" d="" stroke="none" fill="#0a335c" fill-rule="evenodd"></path><path id="path38" d="" stroke="none" fill="#1f335c" fill-rule="evenodd"></path><path id="path39" d="" stroke="none" fill="#1c3561" fill-rule="evenodd"></path><path id="path40" d="" stroke="none" fill="#1a345e" fill-rule="evenodd"></path><path id="path41" d="" stroke="none" fill="#18345e" fill-rule="evenodd"></path><path id="path42" d="M0.309 86.681 L 0.309 172.743 1.037 173.533 C 1.437 173.968,20.602 202.514,43.625 236.968 C 66.649 271.423,86.278 300.657,87.247 301.933 C 98.473 316.727,114.617 327.241,132.869 331.644 C 141.593 333.749,246.389 350.616,250.735 350.614 C 257.879 350.613,263.999 348.486,269.381 344.134 C 273.004 341.205,351.668 264.196,352.216 263.041 C 354.069 259.144,351.930 254.100,347.916 252.898 C 347.041 252.636,314.398 247.759,275.374 242.060 C 236.350 236.360,203.078 231.409,201.437 231.056 C 185.698 227.670,170.167 217.635,160.535 204.628 C 159.271 202.921,134.432 164.555,105.336 119.369 C 67.927 61.271,52.361 37.342,52.178 37.652 C 51.991 37.968,51.462 37.289,50.273 35.209 C 41.811 20.399,25.001 8.108,4.695 1.882 C 2.427 1.187,0.513 0.619,0.441 0.619 C 0.369 0.619,0.309 39.347,0.309 86.681 M270.799 408.222 C 267.501 408.773,263.065 410.215,260.170 411.676 C 254.538 414.518,255.283 413.818,214.044 455.045 C 170.963 498.115,172.185 496.792,167.113 505.878 L 166.120 507.657 248.059 507.657 L 329.997 507.657 363.677 467.210 C 382.201 444.964,397.749 426.040,398.227 425.157 C 402.850 416.621,396.776 408.711,385.193 408.188 C 376.328 407.787,273.218 407.818,270.799 408.222 " stroke="none" fill="#173560" fill-rule="evenodd"></path><path id="path43" d="" stroke="none" fill="#15375d" fill-rule="evenodd"></path><path id="path44" d="" stroke="none" fill="#163462" fill-rule="evenodd"></path><path id="path45" d="M203.248 465.507 L 177.726 491.106 203.326 465.585 C 217.405 451.548,228.925 440.028,228.925 439.985 C 228.925 439.768,226.973 441.709,203.248 465.507 " stroke="none" fill="#153664" fill-rule="evenodd"></path><path id="path46" d="" stroke="none" fill="#14375e" fill-rule="evenodd"></path><path id="path47" d="" stroke="none" fill="#143561" fill-rule="evenodd"></path><path id="path48" d="" stroke="none" fill="#133664" fill-rule="evenodd"></path><path id="path49" d="" stroke="none" fill="#123565" fill-rule="evenodd"></path><path id="path50" d="" stroke="none" fill="#0b3764" fill-rule="evenodd"></path><path id="path51" d="" stroke="none" fill="#1e3565" fill-rule="evenodd"></path><path id="path52" d="" stroke="none" fill="#163961" fill-rule="evenodd"></path><path id="path53" d="M203.093 465.352 L 177.417 491.106 203.171 465.430 C 227.113 441.561,229.064 439.598,228.847 439.598 C 228.804 439.598,217.215 451.187,203.093 465.352 " stroke="none" fill="#005555" fill-rule="evenodd"></path></g></svg>
-					</div>
+					<p>Xác định rõ mục tiêu kinh doanh, xây dựng hệ thống quản trị doanh nghiệp hiệu quả giúp PVI phát triển bền vững và tối ưu hóa nguồn lực lao động.</p>
+					<p>Xây dựng, duy trì văn hóa doanh nghiệp tại PVI bởi văn hóa doanh nghiệp là cốt lõi, nền tảng để phát triển.</p>
+					<p>Bảo vệ và phát triển thương hiệu của PVI. Không ngừng sáng tạo, đổi mới để PVI ngày một phát triển.</p>
+					<p>PVI tập trung phát triển dựa trên nguyên tắc bảo vệ môi trường, đóng góp cho sự phát triển chung của xã hội, cộng đồng.</p>
+					<svg class="bg-img" xmlns="http://www.w3.org/2000/svg" width="236" height="300" viewBox="0 0 236 300" fill="none">
+						<g style="mix-blend-mode:screen" clip-path="url(#clip0_739_2078)">
+						<g opacity="0.55">
+						<path d="M225.35 240.524L164.58 240.314C158.04 239.814 151.6 242.204 146.96 246.854L104.81 289.074C101.77 292.114 99.3202 295.614 97.4902 299.374H194.07L233.92 251.444C238.87 242.554 228.5 240.084 225.35 240.524Z" fill="#183665"/>
+						<path d="M160.01 201.544L206.05 156.594C208.99 154.114 207.64 149.324 203.84 148.754L121.49 136.684C109.64 134.944 99.12 128.164 92.64 118.094L30.63 21.6644L30.34 22.2444C25.24 11.8044 13.51 3.71438 0 0.234375V101.914C0.23 102.154 0.47 102.384 0.67 102.674L49.35 175.614C56.72 186.664 68.35 194.154 81.46 196.304L144.62 206.654C150.27 207.514 155.99 205.614 160.01 201.544Z" fill="#183665"/>
+						</g>
+						</g>
+						<defs>
+						<clipPath id="clip0_739_2078">
+						<rect width="235.24" height="299.14" fill="white" transform="translate(0 0.234375)"/>
+						</clipPath>
+						</defs>
+					</svg>
 				</div>		
 			</div>
 		</div>
@@ -458,12 +372,12 @@
 	<section class="section detail-content commit">
 		<div class="container">
 			<div class="wrapper">
-				<h4 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">hoạt động & cộng đồng</h4>
+				<h4 class="title">hoạt động & cộng đồng</h4>
 				<div class="row justify-content-between">
-					<div class="col-lg-4 mb-30 left-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+					<div class="col-lg-4 mb-30 left-content">
 						<img src="assets/images/image 32.png" alt="">
 					</div>
-					<div class="col-lg-7 mb-30" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+					<div class="col-lg-7 mb-30">
 						<a href="acivity-detail.html"><h5>Tin hoạt động số 1</h5></a>
 						<p>Tại PVI, chúng tôi tin rằng sự đa dạng thúc đẩy sự sáng tạo, đổi mới và khả năng lãnh đạo tư tưởng thông qua việc truyền tải những ý tưởng và quan điểm mới. Chúng tôi đã cam kết xây dựng một nền văn hóa mang lại cơ hội cho tất cả nhân viên bất kể sự khác biệt của chúng tôi và hỗ trợ lực lượng lao động phản ánh cộng đồng nơi chúng tôi làm việc và sinh sống. Do đó, chúng tôi có thể thu thập thông tin chi tiết và trí tuệ chung của mình để cung cấp tư duy mới và sáng tạo cho khách hàng của chúng tôi</p>
 					</div>
@@ -476,11 +390,11 @@
 		<div class="container">
 			<div class="wrapper">
 				<div class="row justify-content-between">
-					<div class="col-lg-7 mb-30 left-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+					<div class="col-lg-7 mb-30 left-content">
 						<a href="activity-detail.html"><h5>Tin hoạt động số 2</h5></a>
 						<p>Thông qua hoạt động từ thiện của công ty và hỗ trợ hoạt động tình nguyện, PVI và các công ty con thực hiện Nguyên tắc CSR của công ty, “Cải thiện cộng đồng”, để tạo ra sự khác biệt tích cực trong cộng đồng mà chúng tôi đang sống và làm việc.</p>
 					</div>
-					<div class="col-lg-4 mb-30" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+					<div class="col-lg-4 mb-30">
 						<img src="assets/images/image 33.png" alt="">
 					</div>
 				</div>	
@@ -492,10 +406,10 @@
 		<div class="container">
 			<div class="wrapper">
 				<div class="row justify-content-between">
-					<div class="col-lg-4 mb-30 left-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+					<div class="col-lg-4 mb-30 left-content">
 						<img src="assets/images/image 34.png" alt="">
 					</div>
-					<div class="col-lg-7 mb-30" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+					<div class="col-lg-7 mb-30">
 						<a href="activity-detail.html"><h5>Tin hoạt động số 3</h5></a>
 						<p>Hội đồng quản trị và đội ngũ quản lý điều hành của chúng tôi hiểu rằng sự bền vững về tài chính, xã hội và môi trường luôn song hành với nhau, vì vậy chúng tôi luôn nhiệt tình trong việc liên tục cải tiến trong một số lĩnh vực áp dụng nhất cho doanh nghiệp của chúng tôi. </p>		
 						<p>Chúng tôi tin rằng các công ty không tập trung vào các sáng kiến về Môi trường – Quản trị - Xã hội (ESG / DEI) sẽ bị tụt hậu và kém nhanh nhẹn hơn trong việc cung cấp các sản phẩm và dịch vụ trong thế giới năng động và đầy biến động của chúng ta. 
@@ -619,52 +533,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/aos-master/dist/aos.js"></script>
     <script src="assets/js/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
-	<script>
-		var Split = function() {
-		this.$t = $(".split");    
-		this.gridX = 8;
-		this.gridY = 6;
-		this.w = this.$t.width();
-		this.h = this.$t.height();
-		this.img = $("img", this.$t).attr("src");
-		// this.delay = 0.3;
-		
-		this.create = function() {
-			$("div", this.$t).remove();
-			
-			var x = 0;
-			var y = 0;
-			for (x = 0; x < this.gridX; x++) {
-			for (y = 0; y < this.gridY; y++) {
-				// var width = this.w / this.gridX * 101 / this.w + "%",
-				//     height = this.h / this.gridY * 101 / this.h + "%",
-				var  top = this.h / this.gridY * y * 100 / this.h + "%",
-					left = this.w / this.gridX * x * 100 / this.w + "%",
-					bgPosX = -(this.w / this.gridX * x) + "px",
-					bgPosY = -(this.h / this.gridY * y) + "px";
-		
-				$("<div />")
-				.css({
-				top: top,
-				left: left,
-				// width: width,
-				// height: height,
-				backgroundImage: "url(" + this.img + ")",
-				backgroundPosition: bgPosX + " " + bgPosY,
-				backgroundSize: this.w + "px"
-				// transitionDelay: x * this.delay + y * this.delay + "s"
-				})
-				.appendTo(this.$t);
-			}
-			}
-		};
-		
-		this.create();
-
-		};
-	</script>
 </body>
 </html>

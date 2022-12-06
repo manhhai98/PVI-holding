@@ -11,15 +11,18 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/aos-master/dist/aos.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/fancybox.css">
 	<link rel="stylesheet" href="assets/css/pubweb.css">
 </head>
 <style>
-	.banner{
-		overflow: hidden;
+	.banner-img {
+		background-image: url(assets/images/banner3.png);
+	}
+
+	svg.bg-img path{
+		fill: #183665;
 	}
 
 	.detail-content .nav-tabs .nav-link{
@@ -43,115 +46,6 @@
 		margin-bottom: 30px;
 	}
 
-
-	.split div{
-		width: 145px;
-    	height: 125px;
-	}
-
-	.split div:nth-child(2),.split div:nth-child(3),.split div:nth-child(4),
-	.split div:nth-child(38),.split div:nth-child(40),.split div:nth-child(39){
-		display: none;
-	}
-
-	.split div:nth-child(8),.split div:nth-child(43){
-		transition-delay: 0.3s;
-	}
-
-	.split div:nth-child(14),.split div:nth-child(37){
-		transition-delay: 0.5s;
-	}
-
-	.split div:nth-child(20),.split div:nth-child(31){
-		transition-delay: 0.7s;
-	}
-
-	.split div:nth-child(26),.split div:nth-child(25){
-		transition-delay: 0.9s;
-	}
-
-	.split div:nth-child(32),.split div:nth-child(19){
-		transition-delay: 1.1s;
-	}
-
-	.split div:nth-child(33),.split div:nth-child(13){
-		transition-delay: 1.3s;
-	}
-
-	.split div:nth-child(27),.split div:nth-child(7){
-		transition-delay: 1.5s;
-	}
-
-	.split div:nth-child(21),.split div:nth-child(6){
-		transition-delay: 1.7s;
-	}
-
-	.split div:nth-child(15),.split div:nth-child(12){
-		transition-delay: 1.9s;
-	}
-
-	.split div:nth-child(9),.split div:nth-child(18){
-		transition-delay: 2.1s;
-	}
-
-	.split div:nth-child(10),.split div:nth-child(24){
-		transition-delay: 2.3s;
-	}
-
-	.split div:nth-child(16),.split div:nth-child(30){
-		transition-delay: 2.5s;
-	}
-	.split div:nth-child(22),.split div:nth-child(36){
-		transition-delay: 2.7s;
-	}
-	.split div:nth-child(28),.split div:nth-child(42){
-		transition-delay: 2.9s;
-	}
-	.split div:nth-child(34),.split div:nth-child(41){
-		transition-delay: 3.1s;
-	}
-	.split div:nth-child(35){
-		transition-delay: 3.3s;
-	}
-	.split div:nth-child(29){
-		transition-delay: 3.5s;
-	}
-	.split div:nth-child(23){
-		transition-delay: 3.7s;
-	}
-	.split div:nth-child(17){
-		transition-delay: 3.9s;
-	}
-	.split div:nth-child(11){
-		transition-delay: 4.1s;
-	}
-	.split div:nth-child(5){
-		transition-delay: 4.3s;
-	}
-	.banner .main{
-		padding-top: 300px;
-	}
-	@media only screen and (min-width: 1700px){
-		.split div {
-			width: 182px;
-    		height: 157px;
-		}
-		.banner .main{
-			padding-top: 370px;
-		}
-	}
-
-	@media only screen and (min-width: 2200px){
-		.split div {
-			width: 240px;
-    		height: 210px;
-		}
-		.banner .main{
-			padding-top: 500px;
-		}
-	}
-
-
 	@media only screen and (max-width: 576px){
 		.detail-content .nav-tabs{
 			width: 100%;
@@ -159,106 +53,6 @@
 
 		.shareholder .item{
 			width: 100%;
-		}
-	}
-	@media only screen and (max-width: 1441px){
-		.split div {
-			width: 135px;
-			height: 118px;
-		}
-		.banner .main{
-			padding-top: 270px
-		}
-	}
-	@media only screen and (max-width: 1281px){
-		.split div {
-			width: 120px;
-			height: 106px;
-		}
-		.banner .main{
-			padding-top: 240px;
-		}
-	}
-	@media only screen and (max-width: 1200px){
-		.split div {
-			width: 112px;
-			height: 98px;
-		}
-	}
-	@media only screen and (max-width: 992px){
-		.split div {
-			width: 94px;
-			height: 82px;
-		}
-		.banner .main{
-			padding-top: 200px;
-		}
-	}
-	@media only screen and (max-width: 801px){
-		.banner .main {
-			padding-top: 140px;
-			width: 60%;
-		}
-		.split div {
-			width: 75px;
-			height: 66px;
-		}
-	}
-	@media only screen and (max-width: 768px){
-		.split div {
-			width: 73px;
-			height: 63px;
-		}
-		.banner .main{
-			padding-top: 145px;
-		}
-	}
-	@media only screen and (max-width: 641px){
-		.split div {
-			width: 60px;
-			height: 52px;
-		}
-		.banner .main{
-			padding-top: 120px;
-		}
-	}
-	@media only screen and (max-width: 601px){
-		.banner .main{
-			width: 50%;
-			padding-top: 100px;
-		}
-		.split div {
-			width: 57px;
-			height: 49px;
-		}
-	}
-	@media only screen and (max-width: 576px){
-		.split div {
-			width: 55px;
-			height: 48px;
-		}
-		.banner .main{
-			padding-top: 105px;
-		}
-	}
-	@media only screen and (max-width: 481px){
-		.split div {
-			width: 35px;
-			height: 30px;
-		}
-		.banner .main{
-			padding-top: 45px;
-		}
-	}
-	@media only screen and (max-width: 415px){
-		.split div {
-			width: 39px;
-			height: 34px;
-		}
-	}
-	@media only screen and (max-width: 361px){
-		.banner .main{
-			padding-top: 30px;
 		}
 	}
 </style>
@@ -536,28 +330,23 @@
 
 	<!-- Banner section start -->
 	<section class="banner">
-		<div class="banner-slide fix-height">
-		    <div class="item bg-img1">
-		    	<div class="row mr-0 ml-0 justify-content-end" style="height: 100%;">
+		<div class="banner-slide">
+		    <div class="item banner-img">
+		    	<div class="row" style="height: 100%;">
 		    		<div class="col-3">
-		    			<div class="main">
-					<div class="container">
-						<div class="content animate__animated animate__fadeInUp animate__delay-1s">
-							<h2 class="title">Quan hệ cổ đông</h2>
-						</div>		
-					</div>	
-				</div>
-		    		</div>
-		    		<div class="col-8 pr-0 pl-0">
-		    			<div class="split">
-							<img src="assets/images/banner3.png" alt="" class="banner-img">
+		    			<div class="main main2">
+							<div class="container">
+								<div class="content">
+									<h2 class="title">Quan hệ cổ đông</h2>
+								</div>		
+							</div>	
 						</div>
 		    		</div>
 		    	</div>
 		    </div>
 		</div>
 		<div class="wrapper">
-			<div class="side-menu animate__animated animate__fadeInLeft animate__delay-1s">
+			<div class="side-menu">
 				<div class="social">
 					<ul>
 						<li>
@@ -583,7 +372,7 @@
 	<section class="section detail-content shareholder">
 		<div class="container">
 			<div class="wrapper">
-				<div class="row">
+				<div class="row align-items-end">
 					<div class="col-lg-3 p-lg-0">
 						<div class="left">
 							<img src="assets/images/qhcd.png" alt="">
@@ -591,9 +380,9 @@
 					</div>
 					<div class="col-lg-9 p-lg-0">
 						<div class="card">
-							<h4 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">THÔNG ĐIỆP TỪ Chủ Tịch hội đồng quản trị</h4>
-							<span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Kính gửi: Quý cổ đông,</span>
-							<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Năm 2021 là năm thứ hai liên tiếp nền Kinh tế toàn cầu nói chung và Việt Nam nói riêng bị ảnh hưởng lớn từ đại dịch Covid. Bắt đầu từ tháng 4/2021 và đến thời điểm
+							<h4 class="title">THÔNG ĐIỆP TỪ Chủ Tịch hội đồng quản trị</h4>
+							<span>Kính gửi: Quý cổ đông,</span>
+							<p>Năm 2021 là năm thứ hai liên tiếp nền Kinh tế toàn cầu nói chung và Việt Nam nói riêng bị ảnh hưởng lớn từ đại dịch Covid. Bắt đầu từ tháng 4/2021 và đến thời điểm
 							tháng 7/2021, dịch Covid bùng phát mạnh tại Việt Nam,
 							nhiều tỉnh, thành phố trọng điểm phải thực hiện giãn cách,
 							gián đoạn kinh doanh, các Lĩnh vực lớn bị ảnh hưởng trầm
@@ -605,8 +394,20 @@
 							trưởng 16.71% so với cùng kỳ năm 2020, trong đó doanh
 							thu phí bảo hiểm phi nhân thọ ước đạt 57.880 tỷ đồng,
 							tăng 3.98% so với cùng kỳ 2020.</p>	
-							<a href="#" class="detail-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Xem thêm <i class="fas fa-arrow-right"></i></a>
-							<img src="assets/images/Frame.png" alt="" class="bg-img">
+							<a href="#" class="detail-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
+							<svg class="bg-img" xmlns="http://www.w3.org/2000/svg" width="324" height="411" viewBox="0 0 324 411" fill="none">
+								<g style="mix-blend-mode:hard-light" opacity="0.3" clip-path="url(#clip0_604_3198)">
+								<g opacity="0.55">
+								<path d="M309.673 329.801L226.232 329.513C217.252 328.828 208.41 332.104 202.039 338.477L144.164 396.344C139.99 400.51 136.626 405.307 134.113 410.461H266.724L321.441 344.768C328.237 332.583 313.999 329.198 309.673 329.801Z" fill="#183665"/>
+								<path d="M219.957 276.376L283.173 214.767C287.21 211.368 285.356 204.803 280.139 204.022L167.067 187.479C150.796 185.094 136.351 175.801 127.454 161.999L42.3099 29.8328L41.9117 30.6277C34.9091 16.3187 18.803 5.23061 0.25293 0.460938V139.823C0.568735 140.152 0.898271 140.467 1.17288 140.865L68.0137 240.836C78.1332 255.981 94.102 266.247 112.103 269.194L198.826 283.379C206.584 284.558 214.437 281.954 219.957 276.376Z" fill="#183665"/>
+								</g>
+								</g>
+								<defs>
+								<clipPath id="clip0_604_3198">
+								<rect width="323" height="410" fill="white" transform="translate(0.25293 0.460938)"/>
+								</clipPath>
+								</defs>
+							</svg>
 						</div>
 						
 					</div>
@@ -616,7 +417,7 @@
 	</section>
 	<!-- section end -->
 
-	<section class="section detail-content shareholder news " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section detail-content shareholder news">
 		<div class="container">
 			<div class="wrapper">
 				<div class="row">
@@ -677,7 +478,7 @@
 		</div>
 	</section>
 
-	<section class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section">
 		<div class="row mr-0 ml-0">
 			<div class="col-12 pl-0 pr-0">
 				<img src="assets/images/Rectangle 159.png" alt="">
@@ -685,7 +486,7 @@
 		</div>
 	</section>
 
-	<section class="section detail-content news gray-bg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"> 
+	<section class="section detail-content news gray-bg"> 
 		<div class="container">
 			<div class="wrapper">
 				<div class="row">
@@ -736,7 +537,7 @@
 		</div>
 	</section>
 
-	<section class="section detail-content shareholder news" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+	<section class="section detail-content shareholder news">
 		<div class="container">
 			<div class="wrapper">
 				<div class="row">
@@ -910,53 +711,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/fontawesome.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/aos-master/dist/aos.js"></script>
     <script src="assets/js/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
-
-	<script>
-		var Split = function() {
-		this.$t = $(".split");    
-		this.gridX = 7;
-		this.gridY = 6;
-		this.w = this.$t.width();
-		this.h = this.$t.height();
-		this.img = $("img", this.$t).attr("src");
-		// this.delay = 0.3;
-		
-		this.create = function() {
-			$("div", this.$t).remove();
-			
-			var x = 0;
-			var y = 0;
-			for (x = 0; x < this.gridX; x++) {
-			for (y = 0; y < this.gridY; y++) {
-				// var width = this.w / this.gridX * 101 / this.w + "%",
-				//     height = this.h / this.gridY * 101 / this.h + "%",
-				var  top = this.h / this.gridY * y * 100 / this.h + "%",
-					left = this.w / this.gridX * x * 100 / this.w + "%",
-					bgPosX = -(this.w / this.gridX * x) + "px",
-					bgPosY = -(this.h / this.gridY * y) + "px";
-		
-				$("<div />")
-				.css({
-				top: top,
-				left: left,
-				// width: width,
-				// height: height,
-				backgroundImage: "url(" + this.img + ")",
-				backgroundPosition: bgPosX + " " + bgPosY,
-				backgroundSize: this.w + "px"
-				// transitionDelay: x * this.delay + y * this.delay + "s"
-				})
-				.appendTo(this.$t);
-			}
-			}
-		};
-		
-		this.create();
-
-		};
-	</script>
 </body>
 </html>
