@@ -386,7 +386,7 @@
 		<!-- Banner section end -->
 
 		<!-- Detail content section start -->
-		<section class="section detail-content">
+		<section class="section detail-content pvi-present">
 			<div class="container">
 				<div class="wrapper">
 					<h4 class="title">Pvi Ngày nay</h4>
@@ -410,55 +410,57 @@
 						Để thực hiện tốt các nhiệm vụ chiến lược phát triển Công ty và của ĐHĐCĐ giao, PVI luôn sẽ tiếp tục thực hiện cải cách sâu rộng theo hướng chất lượng hơn, cạnh tranh hơn, đồng thời tiếp tục theo đuổi những giá trị doanh nghiệp cốt lõi: xây dựng nền tảng đảm bảo các mục tiêu phát triển bền vững, hài hòa lợi ích của cổ đông, khách hàng và người lao động.
 					</p>
   
-					<section class="section">
+					<section class="section ">
 						<h4 class="title">Những con số</h4>
 						<div class="row">
-							<div class="col-lg-6 large-item">
-								<div class="item mb-30">
+							<div class="col-lg-4">
+								<div class="item">
 									<div class="thumb">
-										<img src="assets/images/Rectangle 161.png" alt="">
-										<h5>Tổng tài sản</h5>
+										<img src="assets/images/ncs1.png" alt="ncs">
 									</div>
-									<div class="text-area bg-color1">
-										24.282 tỷ đồng ( 2021)
+									<div class="text text-right">
+										<h5>Vốn chủ sở hữu (2021)</h5>
+										<h3>7839,96 tỷ đồng</h3>
 									</div>
 								</div>
-								<div class="item mb-30">
+								<div class="item">
 									<div class="thumb">
-										<img src="assets/images/Rectangle 164.png" alt="">
-										<h5>Vốn chủ sở hữu</h5>
+										<img src="assets/images/ncs2.png" alt="ncs">
 									</div>
-									<div class="text-area bg-color2">
-										7839,96 tỷ đồng (2021)
+									<div class="text text-right">
+										<h5>Nộp NSNN (2021)</h5>
+										<h3> 935 tỷ đồng</h3>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-6 small-item">
-								<div class="item mb-30">
-									<div class="thumb">
-										<img src="assets/images/Rectangle 163.png" alt="">
-										<h5>Nộp NSNN</h5>
+							<div class="col-lg-4">
+								<div class="item">
+									<div class="thumb center-img">
+										<img src="assets/images/ncs.png" alt="ncs" style="height:100%">
 									</div>
-									<div class="text-area bg-color3">
-										935 tỷ đồng (2021)
-									</div>
-								</div>
-								<div class="item mb-30">
-									<div class="thumb">
-										<img src="assets/images/Rectangle 165.png" alt="">
-										<h5 class="blue-text">Mốc doanh thu</h5>
-									</div>
-									<div class="text-area bg-color4">
-										> 11.000 tỷ đồng ( 2019)
+									<div class="text text-center">
+										<h5>Tổng tài sản</h5>
+										<h3>24.282 tỷ đồng (2021)</h3>
 									</div>
 								</div>
-								<div class="item mb-30">
+							</div>
+							<div class="col-lg-4">
+								<div class="item">
 									<div class="thumb">
-										<img src="assets/images/Rectangle 166.png" alt="">
-										<h5 class="blue-text">Mốc LNTT</h5>
+										<img src="assets/images/ncs4.png" alt="ncs">
 									</div>
-									<div class="text-area bg-color5">
-										> 1.100 tỷ đồng ( 2021)
+									<div class="text text-left">
+										<h5>Mốc doanh thu (2019)</h5>
+										<h3>> 11,000 tỷ đồng</h3>
+									</div>
+								</div>
+								<div class="item">
+									<div class="thumb">
+										<img src="assets/images/ncs4.png" alt="ncs">
+									</div>
+									<div class="text text-left">
+										<h5>Mốc LNTT (2021)</h5>
+										<h3>> 1.100 tỷ đồng</h3>
 									</div>
 								</div>
 							</div>
@@ -584,5 +586,9 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/fancybox.umd.js"></script>
     <script src="assets/js/main.js"></script>
+
+	<script>
+		$('.pvi-present .center-img').css({height : $('.pvi-present .thumb:not(.center-img)').outerHeight() * 2 + 15 + 'px'})
+	</script>
 </body>
 </html>
