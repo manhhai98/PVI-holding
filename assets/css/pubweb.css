@@ -920,16 +920,16 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	width: 100%;
 }
 
+.info .item{
+	margin-bottom: 20px;
+}
+
 .info .item span {
-    display: none;
-    padding: 15px 0;
-    background: #E6E6E6;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     color: #0038A4;
     margin-bottom: 30px;
-    text-align: center;
 }
 
 /* .info .item {
@@ -969,6 +969,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	text-align: center;
 	padding: 20px 0;
 	background: #E6E6E6;
+	margin-top: 10px;
 }
 
 .info .text-bottom span {
@@ -986,29 +987,22 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	height: auto;
 }
 
+.info .left-content.text-bottom{
+	height: auto;
+}
+
+.info .left-content.text-bottom span{
+	color: #fff;
+}
+
+.info .left-content.text-bottom .bg-img{
+	width: 70px;
+}
+
 .info .left-content {
 	position: relative;
 	background: #163665;
-	color: #fff;
-	padding: 65px;
-	height: 100%;
-}
-
-
-.info .left-content a {
-	color: #fff;
-	margin-top: 17vw;
-	transition: all .3s ease-in-out;
-	display: block;
-	position: relative;
-	z-index: 2;
-}
-
-
-.info .left-content span {
-	font-size: 20px;
-	font-weight: 600;
-	text-transform: uppercase;
+	padding: 20px 0;
 }
 
 /*Members*/
@@ -2091,6 +2085,23 @@ figcaption {
 	font-size: 13px;
 }
 
+.tradingview-widget-container {
+	height: auto !important;
+}
+
+.tradingview-widget-container iframe{
+	height: 230px !important;
+	width: 100% !important;
+}
+
+.small .tradingview-widget-container iframe{
+	height: 130px !important;
+}
+
+.tradingview-widget-copyright{
+	display: none;
+}
+
 @media only screen and (min-width: 576px) {
 	.container {
 		max-width: 630px;
@@ -2248,10 +2259,6 @@ figcaption {
 		padding: 30px 0;
 	}
 
-	.info .left-content span {
-		font-size: 30px;
-	}
-
 	.footer {
 		margin-top: 150px;
 	}
@@ -2344,6 +2351,10 @@ figcaption {
 
 	.detail .banner .main-content {
 		padding: 95px 0 1px;
+	}
+
+	.info .left-content.text-bottom .bg-img{
+		width: 100px;
 	}
 }
 
@@ -2750,10 +2761,6 @@ figcaption {
 		padding: 15px;
 	}
 
-	.info .item span{
-		display: block;
-	}
-
 	.info .text-bottom{
 		display: none;
 	}
@@ -2819,7 +2826,7 @@ figcaption {
 	}
 
 	.footer .text-right {
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.footer-top {
@@ -2864,6 +2871,10 @@ figcaption {
 
 	.detail .banner .main-content .breadcrumb-area {
 		margin-bottom: 50px;
+	}
+
+	.tradingview-widget-copyright{
+		display: block;
 	}
 }
 
