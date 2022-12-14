@@ -36,9 +36,13 @@ $(function ($) {
       $('body').removeClass('hidden-overflow');
     })
 
-    $('.mb-menu .nav-link').on('click', function(){
-      $(this).next().slideToggle();
-      $('.mb-menu .nav-link').not(this).next().slideUp();
+    $('.mb-menu .dropdown-link').on('click', function(){
+      $(this).parent().next().slideToggle();
+      $(this).children('.fa-minus-square').toggle();
+      $(this).children('.fa-plus-square').toggle();
+      $('.mb-menu .dropdown-link').not(this).parent().next().slideUp();
+      $('.mb-menu .dropdown-link').not(this).children('.fa-minus-square').hide();
+      $('.mb-menu .dropdown-link').not(this).children('.fa-plus-square').show();
     })
 
     $('.detail-content .item .text').on('click', function(){
@@ -46,6 +50,8 @@ $(function ($) {
       $('.detail-content .item .text').not(this).next().slideUp();
       $(this).children('.fa-caret-square-right').toggle();
       $(this).children('.fa-caret-square-down').toggle();
+      $('.detail-content .item .text').not(this).children('.fa-caret-square-right').show();
+      $('.detail-content .item .text').not(this).children('.fa-caret-square-down').hide();
     })
 
     $('.contact-form input,.contact-form textarea').on('click', function(){

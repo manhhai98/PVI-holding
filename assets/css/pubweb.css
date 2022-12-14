@@ -153,7 +153,7 @@ section.section {
 h4.title {
 	font-size: 30px;
 	color: #0038A4;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 600;
 	padding-bottom: 25px;
 	margin-bottom: 25px;
@@ -162,7 +162,6 @@ h4.title {
 }
 
 .banner-img {
-	background-image: url(../images/bg-1.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -309,6 +308,10 @@ h4.title.white-text {
 	border-bottom: none;
 }
 
+.mb-menu .nav .nav-item:hover{
+	background: #fff !important;
+}
+
 .mb-menu .nav .nav-item:nth-child(1) .nav-link {
 	border-bottom: 7px solid #0038A4;
 }
@@ -329,9 +332,20 @@ h4.title.white-text {
 	border-bottom: 7px solid #7AB8FC;
 }
 
-.mb-menu .nav .nav-item .nav-link {
-	padding: 30px;
-	display: block;
+.mb-menu .nav .nav-item .nav-link{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mb-menu .nav .nav-item .nav-link a:first-child{
+	font-weight: 700;
+}
+
+.mb-menu .nav .nav-item .dropdown-link{
+	font-size: 18px;
+	margin-right: 15px;
+	color: #0038A4;
 }
 
 .owl-carousel .owl-item img {
@@ -347,6 +361,9 @@ h4.title.white-text {
 	display: none;
 }
 
+.mb-menu .dropdown-link i.fa-minus-square{
+	display: none;
+}
 
 .mb-menu .nav .nav-item .dropdown li {
 	padding: 10px 0;
@@ -427,7 +444,7 @@ h4.title.white-text {
 .item .text-area h3 {
 	font-size: 20px;
 	font-weight: 400;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	position: relative;
 	z-index: 2;
 }
@@ -467,7 +484,7 @@ h4.title.white-text {
 
 .text-area.bg-color4 h3:last-child a {
 	font-size: 14px;
-	text-transform: initial;
+	/* text-transform: initial; */
 }
 
 .heading {
@@ -682,7 +699,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 .nav .nav-link {
 	color: #000;
 	padding: 10px 0 5px 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	transition: all .3s ease-in-out;
 }
 
@@ -748,7 +765,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	background: #183665;
 	color: #fff;
 	font-size: 18px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -793,7 +810,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	z-index: 2;
 	padding-top: 200px;
 	width: 50%;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #0038A4;
 }
 
@@ -839,7 +856,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 .business p {
 	font-size: 19px;
 	font-weight: 400;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #808080;
 	margin-bottom: 10px;
 }
@@ -927,7 +944,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 .info .item span {
     font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #0038A4;
     margin-bottom: 30px;
 }
@@ -975,7 +992,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 .info .text-bottom span {
 	font-size: 20px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #0038A4;
 }
 
@@ -1087,7 +1104,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 
 .footer h5 {
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 50px;
 }
 
@@ -1110,7 +1127,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .footer .image {
@@ -1246,7 +1263,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 .about-section.members .item h5 {
 	font-size: 20px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 30px;
 }
 
@@ -1284,7 +1301,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 .contact-info h5 {
 	font-size: 22px;
 	color: #0038A4;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 600;
 	margin-bottom: 25px;
 }
@@ -1320,7 +1337,7 @@ figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 18px;
 	font-weight: 700;
 	color: #000;
@@ -1358,7 +1375,7 @@ figcaption {
 
 .breadcrumb a {
 	color: #fff;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	position: relative;
 	font-weight: 400;
 }
@@ -1410,7 +1427,7 @@ figcaption {
 	position: absolute;
 	top: 30px;
 	width: 100%;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #0038A4;
 	padding: 0 15px;
 }
@@ -1497,7 +1514,7 @@ figcaption {
 .detail-content .icon-box h5 {
 	font-size: 24px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 15px;
 	font-family: "Roboto-Black";
 	color: #0038A4;
@@ -1536,12 +1553,13 @@ figcaption {
 .detail-content .item .dropdown {
 	padding-top: 20px;
 	display: none;
+	width: 100%;
 }
 
 .detail-content .item .dropdown a {
 	padding: 10px 30px;
 	margin-bottom: 0;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	font-weight: 700;
 	display: block;
 }
@@ -1580,12 +1598,11 @@ figcaption {
 
 .news .main .text h5 {
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 18px;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	text-transform: uppercase;
 }
 
 .news .main a {
@@ -1717,13 +1734,13 @@ a.file:hover {
 .detail-content.council .item .text h5 {
 	font-size: 19px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 15px;
 }
 
 .detail-content.council .item .text p {
 	color: #808080;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	margin-bottom: 2px;
 	font-size: 14px;
 }
@@ -1794,15 +1811,20 @@ a.file:hover {
 }
 
 .album .item .text {
-	padding-top: 40px;
+	padding-top: 30px;
 	color: #7A7A7A;
 }
 
 .album .item .text a {
 	font-weight: 700;
 	font-size: 22px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	transition: all .3s ease-in-out;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	height: 60px;
 }
 
 .album .item .text a:hover {
@@ -1859,7 +1881,7 @@ a.file:hover {
 .bottom-content .item .title {
 	font-size: 20px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 30px;
 }
 
@@ -1945,7 +1967,7 @@ a.file:hover {
 
 .detail-content.reports .text span {
 	margin-left: 10px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 .detail-content.reports .text i {
@@ -1968,7 +1990,7 @@ a.file:hover {
 
 .commit h5 {
 	font-size: 24px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 30px;
 	font-weight: 700;
 }
@@ -1992,7 +2014,7 @@ a.file:hover {
 	color: #0038A4;
 	font-size: 26px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-bottom: 30px;
 }
 
@@ -2010,7 +2032,7 @@ a.file:hover {
 }
 
 .recruit .item .text h5 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 15px;
@@ -2164,6 +2186,10 @@ figcaption {
 
 	h4.title {
 		font-size: 50px;
+	}
+	
+	.news .main .text h5{
+		font-size: 24px;
 	}
 
 	.recruit .card {
@@ -2635,6 +2661,10 @@ figcaption {
 		width: 50%;
 	}
 
+	.album .item .text a{
+		height: auto;
+	}
+
 	.detail-content .icon-box {
 		padding: 20px;
 	}
@@ -2653,7 +2683,7 @@ figcaption {
 	}
 
 	.mb-menu .nav .nav-item .nav-link {
-		padding: 25px 0;
+		padding: 20px 0;
 	}
 
 	.mb-menu .bottom {
@@ -2670,7 +2700,7 @@ figcaption {
 
 	.banner .owl-carousel .owl-nav button.owl-next,
 	.banner .owl-carousel .owl-nav button.owl-prev {
-		top: 35%;
+		display: none;
 	}
 
 	/* .detail .side-menu {
@@ -2739,7 +2769,7 @@ figcaption {
 
 @media only screen and (max-width: 768px) {
 	.banner .main p {
-		width: 55%;
+		display: none;
 	}
 
 	.related-news {
@@ -2834,7 +2864,7 @@ figcaption {
 	}
 
 	.mb-menu .nav .nav-item .nav-link {
-		padding: 20px 0;
+		padding: 15px 0;
 	}
 
 	.heading img {
@@ -2875,6 +2905,10 @@ figcaption {
 
 	.tradingview-widget-copyright{
 		display: block;
+	}
+
+	.album .item .text a{
+		font-size: 19px;
 	}
 }
 
