@@ -167,6 +167,15 @@ h4.title {
 	background-size: cover;
 }
 
+.owl-carousel .owl-item .tower-img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 66%;
+	object-fit: unset;
+	height: unset;
+}
+
 .blue-text {
 	color: #0038A4 !important;
 }
@@ -2382,6 +2391,10 @@ figcaption {
 	.info .left-content.text-bottom .bg-img{
 		width: 100px;
 	}
+
+	.owl-carousel .owl-item .tower-img{
+		width: 75%;
+	}
 }
 
 @media only screen and (min-width: 2200px) {
@@ -2623,10 +2636,6 @@ figcaption {
 		display: block;
 	}
 
-	.banner .main p {
-		width: 70%;
-	}
-
 	h4.title {
 		font-size: 26px;
 		padding-bottom: 15px;
@@ -2769,7 +2778,7 @@ figcaption {
 
 @media only screen and (max-width: 768px) {
 	.banner .main p {
-		display: none;
+		margin-top: 0;
 	}
 
 	.related-news {
@@ -2956,6 +2965,10 @@ figcaption {
 		font-size: 13px;
 	}
 
+	.banner .main{
+		padding-top: 130px;
+	}
+
 	.banner .owl-carousel .owl-nav button.owl-next,
 	.banner .owl-carousel .owl-nav button.owl-prev {
 		height: 25px;
@@ -2978,6 +2991,10 @@ figcaption {
 
 	.info .item .left-content span{
 		font-size: 24px;
+	}
+
+	.owl-carousel .owl-item .tower-img{
+		width: 100%;
 	}
 }
 
@@ -3021,5 +3038,15 @@ figcaption {
 
 	.info .item .left-content span.small{
 		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.banner .main p {
+		width: 100%;
+	}
+
+	.banner .main{
+		padding-top: 90px;
 	}
 }
