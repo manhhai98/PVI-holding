@@ -171,7 +171,7 @@ h4.title {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 66%;
+	width: 60%;
 	object-fit: unset;
 	height: unset;
 }
@@ -2392,10 +2392,10 @@ figcaption {
 		width: 100px;
 	}
 
-	.owl-carousel .owl-item .tower-img{
+	/* .owl-carousel .owl-item .tower-img{
 		width: 75%;
 	}
-}
+} */
 
 @media only screen and (min-width: 2200px) {
 	.container {
