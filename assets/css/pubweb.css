@@ -150,10 +150,22 @@ section.section {
 	padding-top: 80px;
 }
 
+.modal .message{
+	display: none;
+}
+
+.modal .captcha img{
+	width: 25%;
+}
+
+.modal .captcha input{
+	width: 70%;
+}
+
 h4.title {
 	font-size: 30px;
 	color: #0038A4;
-	/* text-transform: uppercase; */
+	text-transform: capitalize;
 	font-weight: 600;
 	padding-bottom: 25px;
 	margin-bottom: 25px;
@@ -171,7 +183,7 @@ h4.title {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 60%;
+	width: 66%;
 	object-fit: unset;
 	height: unset;
 }
@@ -451,7 +463,7 @@ h4.title.white-text {
 }
 
 .item .text-area h3 {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 400;
 	/* text-transform: uppercase; */
 	position: relative;
@@ -709,6 +721,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	color: #000;
 	padding: 10px 0 5px 0;
 	/* text-transform: uppercase; */
+	font-weight: 600;
 	transition: all .3s ease-in-out;
 }
 
@@ -900,7 +913,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 20px 35px;
+	padding: 15px;
 }
 
 .item .text-area a:not(.detail-btn) {
@@ -1069,7 +1082,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 }
 
 .footer-top {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	overflow: hidden;
 }
 
@@ -1152,8 +1165,8 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 }
 
 .footer-bottom {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 15px;
+	padding-bottom: 20px;
 }
 
 .footer .footer-bottom span {
@@ -1374,6 +1387,10 @@ figcaption {
 	padding: 70px 0 1px;
 }
 
+.detail .banner .main-content h4.title{
+	text-transform: uppercase;
+}
+
 .detail .banner .main-content .breadcrumb-area {
 	margin-bottom: 80px;
 }
@@ -1384,7 +1401,7 @@ figcaption {
 
 .breadcrumb a {
 	color: #fff;
-	/* text-transform: capitalize; */
+	text-transform: uppercase;
 	position: relative;
 	font-weight: 400;
 }
@@ -1883,7 +1900,7 @@ a.file:hover {
 
 .bottom-content .item {
 	background: #77B6F3;
-	color: #fff;
+	color: #000;
 	padding: 50px 60px;
 }
 
@@ -1896,6 +1913,7 @@ a.file:hover {
 
 .bottom-content .item p {
 	margin-bottom: 15px;
+	font-size: 22px;
 }
 
 .bottom-content .item p:last-child {
@@ -2006,7 +2024,7 @@ a.file:hover {
 
 .recruit .heading p {
 	margin-bottom: 5px;
-	color: #808080;
+	color: #333;
 }
 
 .recruit .heading a {
@@ -2193,6 +2211,10 @@ figcaption {
 		font-size: 18px;
 	}
 
+	.business .item .text-area{
+		padding: 20px;
+	}
+
 	h4.title {
 		font-size: 50px;
 	}
@@ -2275,7 +2297,7 @@ figcaption {
 	}
 
 	.item .text-area h3 {
-		font-size: 24px;
+		font-size: 21px;
 	}
 
 	.business p {
@@ -2308,15 +2330,6 @@ figcaption {
 
 	.footer h5 {
 		font-size: 20px;
-	}
-
-	.footer-top {
-		padding-bottom: 60px;
-	}
-
-	.footer-bottom {
-		padding-top: 95px;
-		padding-bottom: 95px;
 	}
 
 	.footer-top .item {
@@ -2643,7 +2656,7 @@ figcaption {
 	}
 
 	.business .item .text-area {
-		padding: 15px;
+		padding: 10px;
 		height: 70px;
 	}
 
@@ -2779,6 +2792,14 @@ figcaption {
 @media only screen and (max-width: 768px) {
 	.banner .main p {
 		margin-top: 0;
+	}
+
+	.bottom-content .item{
+		padding: 20px;
+	}
+
+	.bottom-content .item p{
+		font-size: 16px;
 	}
 
 	.related-news {
@@ -2922,6 +2943,22 @@ figcaption {
 }
 
 @media only screen and (max-width: 576px) {
+	.item .text-area h3{
+		font-size: 14px;
+	}
+
+	.modal .captcha img{
+		width: 30%;
+	}
+	
+	.modal .captcha input{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.business .item .text-area{
+		height: 60px;
+	}
 
 	.detail-content .nav-tabs .nav-item,
 	.detail-content.news .nav-tabs .nav-item {
