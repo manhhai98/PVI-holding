@@ -54,12 +54,12 @@ $(function ($) {
       $('.detail-content .item .text').not(this).children('.fa-caret-square-down').hide();
     })
 
-    $('.modal .btn-primary').on('click', function(){
-      $('.modal .form').hide();
-      $('.modal .message').show();
-    })
 
     $('.contact-form input,.contact-form textarea').on('click', function(){
+      $(this).addClass('active');
+    })
+
+    $('.contact-form input,.contact-form textarea').on('focus', function(){
       $(this).addClass('active');
     })
 
