@@ -48,7 +48,18 @@ ul.dot-list li {
 	text-indent: -24px;
 	padding-left: 24px;
 }
-
+.dot-list {
+	list-style-type: disc;
+	list-style-position: inside;
+	text-indent: -24px;
+	padding-left: 24px;
+}
+.custom-ckeditor-content ul li {
+	list-style-type: disc;
+	list-style-position: inside;
+	text-indent: -24px;
+	padding-left: 24px;
+}
 
 #loading {
 	position: absolute;
@@ -790,6 +801,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 	transform: rotate(-90deg);
 	display: block;
 	white-space: nowrap;
+	text-transform: uppercase;
 }
 
 .banner .owl-carousel .owl-nav button.owl-next,
@@ -1084,7 +1096,7 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 }
 
 .footer-top {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	overflow: hidden;
 }
 
@@ -1167,8 +1179,8 @@ header .header-bottom .nav .nav-item:hover .dropdown {
 }
 
 .footer-bottom {
-	padding-top: 15px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .footer .footer-bottom span {
@@ -1439,6 +1451,7 @@ figcaption {
 
 .detail-content p {
 	margin-bottom: 20px;
+	background-color: transparent !important;
 }
 
 .detail-content .item,
@@ -1462,6 +1475,13 @@ figcaption {
 	/* text-transform: uppercase; */
 	color: #0038A4;
 	padding: 0 15px;
+}
+
+blockquote{
+	font-style: italic;
+    	padding: 1rem;
+    	border-left: solid 1rem #0372FF;
+    	background: #f0f0f0;
 }
 
 .pvi-present .item .text h5{
@@ -1583,9 +1603,11 @@ figcaption {
 }
 
 .detail-content .item .dropdown {
-	padding-top: 20px;
 	display: none;
 	width: 100%;
+    height: 300px;
+    overflow: auto;
+    background: #edf2f8;
 }
 
 .detail-content .item .dropdown a {
@@ -1605,13 +1627,16 @@ figcaption {
 }
 
 .detail-content .item .dropdown a:not(:last-child) {
-	border-bottom: 3px solid #E6E6E6;
+	border-bottom: 2px solid #fff;
 }
 
 .news .main .item {
-	border-bottom: 3px solid #E6E6E6;
-	padding-bottom: 15px;
 	margin-bottom: 35px;
+}
+
+.news .main .item .text{
+	border-bottom: 3px solid #E6E6E6;
+    padding-bottom: 15px;
 }
 
 .news .main .text {
@@ -2167,10 +2192,20 @@ figcaption {
 	text-align: center;
 }
 
+.detail-content figure.image img{
+	width: 100%;
+}
+
 .detail-content p img{
 	display: block;
 	margin: 0 auto;
 }
+
+hr{
+	margin: 0 0 30px 0;
+}
+
+
 
 @media only screen and (min-width: 576px) {
 	.container {
@@ -2187,6 +2222,15 @@ figcaption {
 @media only screen and (min-width: 992px) {
 	.mt-lg-60 {
 		margin-top: 60px;
+	}
+
+	.commit .col-lg-7{
+		padding-left: 60px;
+	}
+
+	.commit .row div:nth-child(5n-1){
+		padding-left: 0;
+		padding-right: 70px;
 	}
 
 	.pvi-present .section .col-lg-4:nth-child(2){

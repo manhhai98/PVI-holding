@@ -54,6 +54,7 @@ $(function ($) {
       $('.detail-content .item .text').not(this).children('.fa-caret-square-down').hide();
     })
 
+    $('.commit .row div:nth-child(2n)').after('<hr>');
 
     $('.contact-form input,.contact-form textarea').on('click', function(){
       $(this).addClass('active');
