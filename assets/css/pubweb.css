@@ -2209,6 +2209,10 @@ hr{
 	display: none;
 }
 
+#compliance .modal-body{
+	padding-top: 2rem;
+}
+
 @media only screen and (min-width: 576px) {
 	.container {
 		max-width: 630px;
