@@ -151,11 +151,5 @@ $(function ($) {
           }
       }
     })
-
-    $('.compliance-btn').on('click', function(){
-      $(this).hide();
-      $('#compliance .contact-form').hide();
-      $('#compliance .message').show();
-    })
   });
 });

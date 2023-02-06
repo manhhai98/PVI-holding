@@ -2205,10 +2205,6 @@ hr{
 	margin: 0 0 30px 0;
 }
 
-#compliance .message{
-	display: none;
-}
-
 #compliance .modal-body{
 	padding-top: 2rem;
 }
