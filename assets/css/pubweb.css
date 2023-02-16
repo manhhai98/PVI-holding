@@ -1407,11 +1407,31 @@ figcaption {
 	border-bottom: 2px solid #3399FF;
 }
 
+.detail .banner.banner-background .main-content{
+	background: none;
+}
 
+.detail .banner.banner-background{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.detail .banner.banner-background::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.3);
+}
 
 .detail .banner .main-content {
 	background: #183665;
 	padding: 70px 0 1px;
+	position: relative;
 }
 
 .detail .banner .main-content h4.title{
