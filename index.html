@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="assets/css/pubweb.css">
 </head>
 <style>
+	.banner{
+		overflow: hidden;
+	}
 	.banner .main .title {
 		background: none;
 		-webkit-text-fill-color: unset;
@@ -339,26 +342,36 @@
 
 	<!-- Banner section start -->
 	<section class="banner banner-slide">
-		<div class="owl-carousel owl-theme" id="banner-slide">
-			<div class="item">
-				<video autoplay muted loop id="myVideo">
-					<source src="assets/images/shutterstock_1063338604.mov" type="video/mp4">
-				</video>
-				<div class="container">
-					<div class="main">
-						<h2 class="title">PVI HOLDINGS</h2>
-						<h5 class="sub-title">TÀI CHÍNH . BẢO HIỂM . ĐẦU TƯ</h5>
-						<p>PVI hoạt động theo mô hình công ty mẹ và công ty con với các hoạt động kinh doanh
-							<br>lõi bao gồm: <br>
-							Bảo hiểm phi nhân thọ, tái bảo hiểm;
-							quản lý quỹ đầu tư và danh mục chứng khoán, Tư vấn đầu tư.
-						</p>
+		<div class="d-flex justify-content-between" style="height: 100%;flex-direction: column;">
+			<div class="owl-carousel owl-theme" id="banner-slide">
+				<div class="item">
+					<video autoplay muted loop id="myVideo">
+						<source src="assets/images/shutterstock_1063338604.mov" type="video/mp4">
+					</video>
+					<div class="container">
+						<div class="main">
+							<h2 class="title">PVI HOLDINGS</h2>
+							<h5 class="sub-title">TÀI CHÍNH . BẢO HIỂM . ĐẦU TƯ</h5>
+							<p>PVI hoạt động theo mô hình công ty mẹ và công ty con với các hoạt động kinh doanh
+								<br>lõi bao gồm: <br>
+								Bảo hiểm phi nhân thọ, tái bảo hiểm;
+								quản lý quỹ đầu tư và danh mục chứng khoán, Tư vấn đầu tư.
+							</p>
+						</div>
 					</div>
+					<img src="assets/images/banner1.png" alt="" class="tower-img">
 				</div>
-				<img src="assets/images/banner1.png" alt="" class="tower-img">
+				<div class="item">
+					<img src="assets/images/bg-2.png" alt="">
+				</div>
 			</div>
-			<div class="item">
-				<img src="assets/images/bg-2.png" alt="">
+			<div class="pvi-news">
+				<div class="heading">Tin tức nổi bật</div>
+				<marquee class="body">
+					<a href="#" class="item">"PVI tổ chức thành công Hội nghị Nhà đầu tư 2023"</a>
+					<a href="#" class="item">"Bảo hiểm PVI - Doanh nghiệp đầu tiên và duy nhất tại Việt Nam được xếp
+						hạng tín nhiệm tài chính A - bởi AM BEST"</a>
+				</marquee>
 			</div>
 		</div>
 		<div class="wrapper">
@@ -1023,6 +1036,7 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/fancybox.umd.js"></script>
 	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
