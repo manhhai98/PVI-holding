@@ -1457,6 +1457,7 @@ figcaption {
 	color: #fff;
 	margin-bottom: 0;
 	font-style: italic;
+	font-family: 'Roboto-Condensed-Bold';
 }
 
 .pvi-news .body{
@@ -2353,6 +2354,7 @@ hr{
 		margin-left: 45px;
 		height: 45px;
 		line-height: 45px;
+		font-size: 18px;
 	}
 
 	.banner .owl-carousel .owl-nav button.owl-next, .banner .owl-carousel .owl-nav button.owl-prev{
