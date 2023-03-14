@@ -1458,13 +1458,12 @@ figcaption {
 	background: #e31f26;
 	color: #fff;
 	margin-bottom: 0;
-	font-style: italic;
 }
 
 .pvi-news .body{
 	width: 80%;
 	background: #939393;
-	color: #fff
+	color: #fff;
 }
 
 .pvi-news .body a{
@@ -2330,7 +2329,7 @@ hr{
 
 @media only screen and (min-width: 1200px) {
 	.container {
-		max-width: 1050px;
+		max-width: 1180px;
 	}
 }
 
